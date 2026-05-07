@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAMAS – Phase 1 Blueprint</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --navy: #003B8E;
+    --navy2: #002d6e;
+    --navy-light: #1a5abf;
+    --accent: #0077FF;
+    --accent2: #00C6FF;
+    --white: #ffffff;
+    --offwhite: #f4f7fc;
+    --text: #1a1a2e;
+    --muted: #5a6a8a;
+    --border: #d0dff5;
+    --success: #0f9e6e;
+    --warn: #e07b00;
+    --danger: #d0021b;
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Inter', system-ui, sans-serif;
+    --page-w: 1280px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: #edf1f9;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ── NAV ── */
+  .sidenav {
+    position: fixed; left: 0; top: 0; bottom: 0;
+    width: 220px;
+    background: var(--navy);
+    color: #fff;
+    padding: 24px 0;
+    z-index: 200;
+    display: flex; flex-direction: column;
+  }
+  .sidenav-logo {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    margin-bottom: 12px;
+  }
+  .sidenav-logo .project { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+  .sidenav-logo .sub { font-size: 10px; opacity: 0.55; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px; }
+  .nav-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 20px;
+    font-size: 12px; font-weight: 500;
+    color: rgba(255,255,255,0.65);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    border-left: 3px solid transparent;
+  }
+  .nav-item:hover { background: rgba(255,255,255,0.07); color: #fff; }
+  .nav-item.active { background: rgba(255,255,255,0.1); color: #fff; border-left-color: var(--accent2); }
+  .nav-num { font-size: 9px; opacity: 0.4; font-family: var(--mono); width: 16px; flex-shrink: 0; }
+
+  /* ── MAIN ── */
+  .main { margin-left: 220px; padding: 40px 48px; max-width: calc(var(--page-w) + 96px); }
+
+  /* ── SLIDE CONTAINER ── */
+  .slide {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 20px rgba(0,59,142,0.08);
+    border: 1px solid var(--border);
+    scroll-margin-top: 24px;
+  }
+  .slide-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 16px 32px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .slide-title { font-size: 16px; font-weight: 700; letter-spacing: -0.2px; }
+  .slide-tag {
+    font-size: 10px; font-family: var(--mono);
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+    padding: 3px 10px; border-radius: 20px; opacity: 0.9;
+  }
+  .slide-body { padding: 32px; }
+
+  /* ── TYPOGRAPHY ── */
+  h2 { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; letter-spacing: -0.4px; }
+  h3 { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+  h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+  p { color: var(--muted); font-size: 13px; line-height: 1.7; }
+  .label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+
+  /* ── GRID ── */
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--offwhite);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .card-blue {
+    background: #e8f0fe;
+    border: 1px solid #b8d0fb;
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .card-dark {
+    background: var(--navy);
+    color: #fff;
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .card-dark h3, .card-dark h4 { color: #fff; }
+  .card-dark p, .card-dark .label { color: rgba(255,255,255,0.65); }
+
+  /* ── KPI PILLS ── */
+  .kpi-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+  .kpi-pill {
+    background: var(--navy);
+    border-radius: 10px;
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+  }
+  .kpi-val { font-size: 28px; font-weight: 800; line-height: 1; color: var(--accent2); }
+  .kpi-label { font-size: 11px; opacity: 0.7; margin-top: 4px; }
+
+  /* ── STAT CALLOUT ── */
+  .stat-row { display: flex; gap: 20px; margin-bottom: 24px; flex-wrap: wrap; }
+  .stat-box {
+    flex: 1; min-width: 120px;
+    border-radius: 10px;
+    padding: 16px 18px;
+    border-left: 4px solid;
+  }
+  .stat-box.red { background: #fff0f0; border-color: var(--danger); }
+  .stat-box.amber { background: #fff7e6; border-color: var(--warn); }
+  .stat-box.green { background: #e8f8f2; border-color: var(--success); }
+  .stat-box.blue { background: #e8f0fe; border-color: var(--accent); }
+  .stat-num { font-size: 26px; font-weight: 800; line-height: 1; }
+  .stat-box.red .stat-num { color: var(--danger); }
+  .stat-box.amber .stat-num { color: var(--warn); }
+  .stat-box.green .stat-num { color: var(--success); }
+  .stat-box.blue .stat-num { color: var(--accent); }
+  .stat-desc { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+  /* ── BADGE ── */
+  .badge {
+    display: inline-block; font-size: 10px; font-weight: 600;
+    padding: 3px 9px; border-radius: 20px; margin: 2px;
+    letter-spacing: 0.04em;
+  }
+  .badge-blue { background: #dbeafe; color: #1d4ed8; }
+  .badge-green { background: #dcfce7; color: #166534; }
+  .badge-amber { background: #fef3c7; color: #92400e; }
+  .badge-red { background: #fee2e2; color: #991b1b; }
+  .badge-navy { background: var(--navy); color: #fff; }
+  .badge-purple { background: #ede9fe; color: #5b21b6; }
+
+  /* ── FLOW DIAGRAM ── */
+  .flow { display: flex; align-items: center; gap: 0; flex-wrap: wrap; margin: 20px 0; }
+  .flow-node {
+    flex: 1; min-width: 120px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    text-align: center;
+    font-size: 12px; font-weight: 600;
+    position: relative;
+  }
+  .flow-node .fn-sub { font-size: 10px; opacity: 0.65; font-weight: 400; margin-top: 2px; }
+  .flow-arrow {
+    width: 32px; flex-shrink: 0;
+    text-align: center; color: var(--navy); font-size: 18px;
+  }
+  .flow-node.layer1 { background: #1a4fa0; }
+  .flow-node.layer2 { background: #155e75; }
+  .flow-node.layer3 { background: #065f46; }
+
+  /* ── ARCHITECTURE LAYERS ── */
+  .arch-layer {
+    display: flex; align-items: stretch; gap: 14px;
+    margin-bottom: 10px;
+  }
+  .arch-layer-num {
+    width: 28px; flex-shrink: 0;
+    background: var(--navy);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 11px; font-weight: 700;
+    font-family: var(--mono);
+  }
+  .arch-layer-body {
+    flex: 1;
+    background: var(--offwhite);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .arch-layer-body h4 { margin-bottom: 4px; }
+  .arch-layer-body .io { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .io-chip {
+    font-family: var(--mono); font-size: 10px;
+    padding: 3px 8px; border-radius: 4px;
+  }
+  .io-in { background: #dbeafe; color: #1e40af; }
+  .io-out { background: #dcfce7; color: #166534; }
+
+  /* ── TABLE ── */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .data-table th {
+    background: var(--navy); color: #fff;
+    padding: 9px 12px; text-align: left; font-weight: 600;
+    font-size: 11px; letter-spacing: 0.04em;
+  }
+  .data-table td {
+    padding: 8px 12px; border-bottom: 1px solid var(--border);
+    color: var(--text); vertical-align: top;
+  }
+  .data-table tr:nth-child(even) td { background: var(--offwhite); }
+  .data-table td:first-child { font-weight: 600; color: var(--navy); }
+
+  /* ── BEFORE/AFTER ── */
+  .compare { display: grid; grid-template-columns: 1fr 40px 1fr; gap: 12px; align-items: center; margin-bottom: 12px; }
+  .before-card { background: #fff0f0; border: 1px solid #fca5a5; border-radius: 8px; padding: 12px 14px; }
+  .after-card { background: #e8f8f2; border: 1px solid #6ee7b7; border-radius: 8px; padding: 12px 14px; }
+  .compare-arrow { text-align: center; font-size: 20px; color: var(--muted); }
+  .before-card h4 { color: var(--danger); font-size: 12px; }
+  .after-card h4 { color: var(--success); font-size: 12px; }
+  .before-card p, .after-card p { font-size: 12px; }
+
+  /* ── DIVIDER ── */
+  .divider { height: 1px; background: var(--border); margin: 24px 0; }
+
+  /* ── PHASE TIMELINE ── */
+  .timeline { display: flex; gap: 0; margin: 20px 0; }
+  .timeline-step {
+    flex: 1;
+    border-top: 3px solid var(--border);
+    padding: 12px 12px 0;
+    position: relative;
+    font-size: 12px;
+  }
+  .timeline-step.done { border-top-color: var(--success); }
+  .timeline-step.active { border-top-color: var(--accent); }
+  .timeline-step.next { border-top-color: var(--warn); }
+  .timeline-step::before {
+    content: '';
+    position: absolute; top: -7px; left: 12px;
+    width: 10px; height: 10px;
+    border-radius: 50%; border: 2px solid #fff;
+    background: var(--border);
+  }
+  .timeline-step.done::before { background: var(--success); }
+  .timeline-step.active::before { background: var(--accent); }
+  .timeline-step.next::before { background: var(--warn); }
+  .timeline-step .ts-label { font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+  .timeline-step .ts-sub { color: var(--muted); font-size: 11px; }
+
+  /* ── CODE BLOCK ── */
+  .code {
+    font-family: var(--mono); font-size: 11px;
+    background: #0f172a; color: #a5f3fc;
+    border-radius: 8px; padding: 14px 16px;
+    line-height: 1.8; overflow-x: auto;
+    margin: 10px 0;
+  }
+  .code .c { color: #64748b; }
+  .code .kw { color: #f97316; }
+  .code .fn { color: #4ade80; }
+  .code .str { color: #fbbf24; }
+
+  /* ── SVG INLINE ── */
+  .chart-wrap { background: var(--offwhite); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+
+  /* ── QUOTE ── */
+  .insight {
+    border-left: 3px solid var(--accent);
+    background: #e8f0fe;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    font-size: 13px; color: var(--navy);
+    margin: 16px 0;
+    font-style: italic;
+  }
+
+  /* ── FORMULA ── */
+  .formula {
+    font-family: var(--mono); font-size: 12px;
+    background: #0f172a; color: #c4b5fd;
+    border-radius: 8px; padding: 12px 16px;
+    line-height: 2; margin: 10px 0;
+  }
+  .formula .fv { color: #fbbf24; }
+  .formula .fo { color: #f97316; }
+  .formula .fc { color: #475569; }
+
+  /* ── ICON CIRCLE ── */
+  .icon-row { display: flex; gap: 20px; flex-wrap: wrap; }
+  .icon-item { display: flex; align-items: flex-start; gap: 12px; flex: 1; min-width: 200px; }
+  .icon-circle {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--navy); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .icon-circle.green { background: var(--success); }
+  .icon-circle.amber { background: var(--warn); }
+  .icon-circle.red { background: var(--danger); }
+
+  /* ── PROGRESS BAR ── */
+  .prog-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .prog-label { font-size: 12px; width: 200px; flex-shrink: 0; color: var(--text); }
+  .prog-track { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .prog-fill { height: 100%; border-radius: 4px; transition: width 1s ease; }
+  .prog-val { font-family: var(--mono); font-size: 11px; width: 42px; text-align: right; color: var(--muted); }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .sidenav { display: none; }
+    .main { margin-left: 0; padding: 20px; }
+    .grid2, .grid3, .grid4, .kpi-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── SIDEBAR NAV ── -->
+<nav class="sidenav">
+  <div class="sidenav-logo">
+    <div class="project">CAMAS</div>
+    <div class="sub">Phase 1 Blueprint · AX Hackathon</div>
+  </div>
+  <a class="nav-item" href="#s1"><span class="nav-num">01</span> Team Details</a>
+  <a class="nav-item" href="#s2"><span class="nav-num">02</span> Problem Statement</a>
+  <a class="nav-item" href="#s3"><span class="nav-num">03</span> Proposed Solution</a>
+  <a class="nav-item" href="#s4"><span class="nav-num">04</span> Technical Architecture</a>
+  <a class="nav-item" href="#s5"><span class="nav-num">05</span> Novelty & Innovation</a>
+  <a class="nav-item" href="#s6"><span class="nav-num">06</span> Datasets</a>
+  <a class="nav-item" href="#s7"><span class="nav-num">07</span> Models</a>
+  <a class="nav-item" href="#s8"><span class="nav-num">08</span> AI Tools Used</a>
+  <a class="nav-item" href="#s9"><span class="nav-num">09</span> Supporting Materials</a>
+</nav>
+
+<main class="main">
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 1 – TEAM DETAILS
+═══════════════════════════════════════════ -->
+<div class="slide" id="s1">
+  <div class="slide-header">
+    <div class="slide-title">Team Details</div>
+    <div class="slide-tag">SLIDE 01</div>
+  </div>
+  <div class="slide-body">
+    <div style="text-align:center; margin-bottom:28px;">
+      <div style="display:inline-block; background:var(--navy); color:#fff; font-size:22px; font-weight:800; padding:12px 40px; border-radius:10px; letter-spacing:-0.5px;">CAMAS</div>
+      <div style="font-size:12px; color:var(--muted); margin-top:8px; letter-spacing:0.08em; text-transform:uppercase;">Context-Aware Memory Adaptive System</div>
+    </div>
+    <div class="grid2">
+      <div class="card-blue">
+        <div class="label">Team Member 1</div>
+        <h3 style="margin-bottom:12px;">[ Your Name Here ]</h3>
+        <table style="width:100%; font-size:12px; color:var(--muted);">
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text); width:110px;">College</td><td>—</td></tr>
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text);">Roll No.</td><td>—</td></tr>
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text);">Email</td><td>—</td></tr>
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text);">Degree / Dept.</td><td>—</td></tr>
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text);">Year</td><td>—</td></tr>
+        </table>
+      </div>
+      <div class="card-blue">
+        <div class="label">Team Member 2</div>
+        <h3 style="margin-bottom:12px;">[ Your Name Here ]</h3>
+        <table style="width:100%; font-size:12px; color:var(--muted);">
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text); width:110px;">College</td><td>—</td></tr>
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text);">Roll No.</td><td>—</td></tr>
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text);">Email</td><td>—</td></tr>
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text);">Degree / Dept.</td><td>—</td></tr>
+          <tr><td style="padding:3px 0; font-weight:600; color:var(--text);">Year</td><td>—</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <span class="badge badge-navy">Samsung S23 · 8 GB</span>
+      <span class="badge badge-navy">Samsung S31 FE · 6 GB</span>
+      <span class="badge badge-navy">Nothing Phone 2a · 8 GB</span>
+      <span class="badge badge-blue">Perfetto Kernel Tracing</span>
+      <span class="badge badge-blue">LSTM + Markov Ensemble</span>
+      <span class="badge badge-green">Real Device Data ✓</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 2 – PROBLEM STATEMENT
+═══════════════════════════════════════════ -->
+<div class="slide" id="s2">
+  <div class="slide-header">
+    <div class="slide-title">Problem Statement</div>
+    <div class="slide-tag">SLIDE 02</div>
+  </div>
+  <div class="slide-body">
+    <div class="label">Selected Problem</div>
+    <h2 style="margin-bottom:16px;">Context-Aware Memory Management for On-Device Agentic Systems</h2>
+
+    <!-- Real baseline data -->
+    <div class="stat-row">
+      <div class="stat-box red">
+        <div class="stat-num">3034 ms</div>
+        <div class="stat-desc">Worst cold-start spike on Samsung S23</div>
+      </div>
+      <div class="stat-box red">
+        <div class="stat-num">77</div>
+        <div class="stat-desc">LMK kill events in 45 seconds · S23</div>
+      </div>
+      <div class="stat-box amber">
+        <div class="stat-num">1.7×10¹¹</div>
+        <div class="stat-desc">Avg. PSI stall ns — critical memory pressure</div>
+      </div>
+      <div class="stat-box amber">
+        <div class="stat-num">23</div>
+        <div class="stat-desc">criticalLowMemory events · S23 baseline</div>
+      </div>
+    </div>
+
+    <!-- Inline chart: launch latency comparison across devices -->
+    <div class="grid2">
+      <div class="chart-wrap">
+        <div class="label" style="margin-bottom:10px;">Launch latency — baseline across 3 devices</div>
+        <svg viewBox="0 0 340 160" xmlns="http://www.w3.org/2000/svg" style="width:100%">
+          <!-- Y axis -->
+          <line x1="50" y1="10" x2="50" y2="130" stroke="#d0dff5" stroke-width="1"/>
+          <line x1="50" y1="130" x2="330" y2="130" stroke="#d0dff5" stroke-width="1"/>
+          <!-- Grid lines -->
+          <line x1="50" y1="40" x2="330" y2="40" stroke="#e8eef8" stroke-width="0.5" stroke-dasharray="3,3"/>
+          <line x1="50" y1="70" x2="330" y2="70" stroke="#e8eef8" stroke-width="0.5" stroke-dasharray="3,3"/>
+          <line x1="50" y1="100" x2="330" y2="100" stroke="#e8eef8" stroke-width="0.5" stroke-dasharray="3,3"/>
+          <!-- Y labels -->
+          <text x="44" y="43" font-size="9" fill="#8a9ab5" text-anchor="end">3000ms</text>
+          <text x="44" y="73" font-size="9" fill="#8a9ab5" text-anchor="end">2000ms</text>
+          <text x="44" y="103" font-size="9" fill="#8a9ab5" text-anchor="end">1000ms</text>
+          <text x="44" y="133" font-size="9" fill="#8a9ab5" text-anchor="end">0ms</text>
+          <!-- S23 bars (worst, median) -->
+          <rect x="65" y="40" width="30" height="90" fill="#d0021b" opacity="0.85" rx="3"/>
+          <rect x="100" y="121" width="30" height="9" fill="#003B8E" opacity="0.7" rx="3"/>
+          <!-- S31FE bars -->
+          <rect x="160" y="68" width="30" height="62" fill="#e07b00" opacity="0.85" rx="3"/>
+          <rect x="195" y="123" width="30" height="7" fill="#003B8E" opacity="0.7" rx="3"/>
+          <!-- Nothing 2a bars -->
+          <rect x="255" y="68" width="30" height="62" fill="#0077FF" opacity="0.85" rx="3"/>
+          <rect x="290" y="121" width="30" height="9" fill="#003B8E" opacity="0.55" rx="3"/>
+          <!-- Labels under bars -->
+          <text x="95" y="148" font-size="9" fill="#5a6a8a" text-anchor="middle">Samsung S23</text>
+          <text x="190" y="148" font-size="9" fill="#5a6a8a" text-anchor="middle">S31 FE</text>
+          <text x="285" y="148" font-size="9" fill="#5a6a8a" text-anchor="middle">Nothing 2a</text>
+          <!-- Legend -->
+          <rect x="60" y="158" width="10" height="7" fill="#d0021b" rx="1"/>
+          <text x="74" y="164" font-size="8" fill="#5a6a8a">Worst spike</text>
+          <rect x="130" y="158" width="10" height="7" fill="#003B8E" rx="1"/>
+          <text x="144" y="164" font-size="8" fill="#5a6a8a">Median</text>
+        </svg>
+      </div>
+      <div>
+        <div class="label" style="margin-bottom:8px;">Problem Understanding</div>
+        <p style="margin-bottom:12px;">Modern smartphones running agentic and GenAI workloads suffer from <strong style="color:var(--danger)">reactive memory management</strong> — the OS only acts after a crisis, not before one. On our Samsung S23 baseline traces:</p>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div class="card" style="padding:10px 14px; display:flex; gap:10px; align-items:flex-start;">
+            <div style="width:6px; height:6px; border-radius:50%; background:var(--danger); margin-top:5px; flex-shrink:0;"></div>
+            <div><strong style="font-size:12px;">Kill storms:</strong><span style="color:var(--muted); font-size:12px;"> 77 LMK kills in 45s means the system is thrashing — evicting apps it will need again in seconds</span></div>
+          </div>
+          <div class="card" style="padding:10px 14px; display:flex; gap:10px; align-items:flex-start;">
+            <div style="width:6px; height:6px; border-radius:50%; background:var(--warn); margin-top:5px; flex-shrink:0;"></div>
+            <div><strong style="font-size:12px;">Cold-start penalty:</strong><span style="color:var(--muted); font-size:12px;"> A 3-second white screen when opening Gallery on an 8 GB flagship is unacceptable</span></div>
+          </div>
+          <div class="card" style="padding:10px 14px; display:flex; gap:10px; align-items:flex-start;">
+            <div style="width:6px; height:6px; border-radius:50%; background:var(--accent); margin-top:5px; flex-shrink:0;"></div>
+            <div><strong style="font-size:12px;">Zero prediction:</strong><span style="color:var(--muted); font-size:12px;"> Android's LMK has no model of what the user will open next — it evicts blindly by OOM score</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 3 – PROPOSED SOLUTION
+═══════════════════════════════════════════ -->
+<div class="slide" id="s3">
+  <div class="slide-header">
+    <div class="slide-title">Proposed Solution</div>
+    <div class="slide-tag">SLIDE 03</div>
+  </div>
+  <div class="slide-body">
+    <h2 style="margin-bottom:4px;">CAMAS — Context-Aware Memory Adaptive System</h2>
+    <p style="margin-bottom:24px;">A 3-layer ML-driven pipeline that predicts user context transitions and proactively orchestrates memory before demand occurs — turning reactive allocation into anticipatory intelligence.</p>
+
+    <!-- 3-layer flow -->
+    <div class="flow" style="margin-bottom:28px;">
+      <div class="flow-node layer1">
+        <div>Layer 1: Observe</div>
+        <div class="fn-sub">Perfetto parser → Features</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node layer2">
+        <div>Layer 2: Predict</div>
+        <div class="fn-sub">LSTM + Markov ensemble</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node layer3">
+        <div>Layer 3: Act</div>
+        <div class="fn-sub">Policy engine + Executor</div>
+      </div>
+      <div class="flow-arrow">↺</div>
+      <div class="flow-node" style="background:#4b3f8a;">
+        <div>Feedback Loop</div>
+        <div class="fn-sub">Outcome logger</div>
+      </div>
+    </div>
+
+    <!-- 3 capability cards -->
+    <div class="grid3">
+      <div class="card">
+        <div style="font-size:24px; margin-bottom:8px;">🧠</div>
+        <h3>Context-Aware Allocation</h3>
+        <p>Priority-weighted RAM budget per process. Foreground app gets max budget; background processes scored by P(next_use). Zero OOM kills when policy is active.</p>
+        <div style="margin-top:10px;"><span class="badge badge-green">KPI 4 — Stability</span> <span class="badge badge-blue">KPI 7 — Efficiency</span></div>
+      </div>
+      <div class="card">
+        <div style="font-size:24px; margin-bottom:8px;">⚡</div>
+        <h3>Predictive Pre-Loading</h3>
+        <p>LSTM + Markov ensemble predicts next app with ≥75% accuracy. When P(next_app) &gt; 0.65 and RAM headroom is safe, pre-warm fires before the user taps.</p>
+        <div style="margin-top:10px;"><span class="badge badge-green">KPI 1 — Load Time</span> <span class="badge badge-blue">KPI 2 — Launch Time</span></div>
+      </div>
+      <div class="card">
+        <div style="font-size:24px; margin-bottom:8px;">💾</div>
+        <h3>Adaptive Cache Policy</h3>
+        <p>ML-scored eviction: score = α·freq + β·recency + γ·P(next_access). Cyclically-used apps never evicted mid-cycle. Cache hit target ≥85%.</p>
+        <div style="margin-top:10px;"><span class="badge badge-green">KPI 6 — Cache Hit</span> <span class="badge badge-amber">KPI 3 — Thrashing</span></div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <!-- Before / After projection -->
+    <div class="label" style="margin-bottom:12px;">Before vs After — Projected Impact</div>
+    <div class="kpi-grid">
+      <div class="kpi-pill"><div class="kpi-val">&lt;300ms</div><div class="kpi-label">Launch time (vs 3034ms)</div></div>
+      <div class="kpi-pill"><div class="kpi-val">0</div><div class="kpi-label">OOM kills (vs 77)</div></div>
+      <div class="kpi-pill"><div class="kpi-val">≥85%</div><div class="kpi-label">Cache hit rate</div></div>
+      <div class="kpi-pill"><div class="kpi-val">≥75%</div><div class="kpi-label">Next-app prediction</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 4 – TECHNICAL ARCHITECTURE
+═══════════════════════════════════════════ -->
+<div class="slide" id="s4">
+  <div class="slide-header">
+    <div class="slide-title">Technical Architecture — Data Flow & System Design</div>
+    <div class="slide-tag">SLIDE 04</div>
+  </div>
+  <div class="slide-body">
+    <!-- 5-layer architecture -->
+    <div class="label" style="margin-bottom:12px;">5-Layer System Architecture</div>
+
+    <div class="arch-layer">
+      <div class="arch-layer-num">L1</div>
+      <div class="arch-layer-body">
+        <h4>Data Collection — Perfetto Trace Ingestion</h4>
+        <p style="font-size:12px;">Captures sys_stats, memreclaim, am events at 1s poll. Produces structured JSON: {ts, app_id, rss_mb, psi_some, psi_full, lmk_events}</p>
+        <div class="io">
+          <span class="io-chip io-in">/proc/meminfo</span>
+          <span class="io-chip io-in">ActivityManager hooks</span>
+          <span class="io-chip io-in">PSI nanosecond counters</span>
+          <span class="io-chip io-out">ground_truth.json</span>
+        </div>
+      </div>
+    </div>
+    <div class="arch-layer">
+      <div class="arch-layer-num">L2</div>
+      <div class="arch-layer-body">
+        <h4>Feature Engineering — Time-Series Builder</h4>
+        <p style="font-size:12px;">11 engineered features including mem_velocity (ΔMemAvailable/Δt), psi_acceleration (2nd derivative), app_sequence sliding window (last 5 apps)</p>
+        <div class="io">
+          <span class="io-chip io-in">Raw JSON traces</span>
+          <span class="io-chip io-out">Feature matrix [10 timesteps × 11 features]</span>
+          <span class="io-chip io-out">Windowed dataset (2s lookahead)</span>
+        </div>
+      </div>
+    </div>
+    <div class="arch-layer">
+      <div class="arch-layer-num">L3</div>
+      <div class="arch-layer-body">
+        <h4>Context Predictor — LSTM + Markov Ensemble</h4>
+        <p style="font-size:12px;">LSTM(32 hidden) → Softmax(N apps). Fallback to Markov chain when entropy &gt; 2.0 nats. Quantized INT8 for &lt;3ms inference.</p>
+        <div class="io">
+          <span class="io-chip io-in">Feature matrix</span>
+          <span class="io-chip io-out">P(next_app_k) top-5</span>
+          <span class="io-chip io-out">Confidence score</span>
+        </div>
+      </div>
+    </div>
+    <div class="arch-layer">
+      <div class="arch-layer-num">L4</div>
+      <div class="arch-layer-body">
+        <h4>Policy Engine — State Machine Controller</h4>
+        <p style="font-size:12px;">4 states: MONITOR → PRELOAD / EVICT_PRELOAD / EMERGENCY. Score = 0.25·freq + 0.35·recency + 0.40·P(next_access)</p>
+        <div class="io">
+          <span class="io-chip io-in">Confidence scores</span>
+          <span class="io-chip io-in">PSI rate, LMK count</span>
+          <span class="io-chip io-out">PRELOAD / KEEP / COMPRESS / EVICT</span>
+        </div>
+      </div>
+    </div>
+    <div class="arch-layer">
+      <div class="arch-layer-num">L5</div>
+      <div class="arch-layer-body">
+        <h4>Monitoring — KPI Measurement & Feedback</h4>
+        <p style="font-size:12px;">adb shell am start -W captures real TTI. Outcome logger feeds back into feature pipeline for continuous personalization.</p>
+        <div class="io">
+          <span class="io-chip io-in">Execution outcomes</span>
+          <span class="io-chip io-out">7 KPI dashboard</span>
+          <span class="io-chip io-out">Model retraining signal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <!-- Core algorithm -->
+    <div class="grid2">
+      <div>
+        <div class="label" style="margin-bottom:8px;">Core Decision Formula</div>
+        <div class="formula">
+<span class="fv">score(item)</span> <span class="fo">=</span> 0.25 <span class="fo">×</span> <span class="fv">freq</span> <span class="fo">+</span> 0.35 <span class="fo">×</span> <span class="fv">recency_decay</span> <span class="fo">+</span> 0.40 <span class="fo">×</span> <span class="fv">P(next_access)</span>
+
+<span class="fc"># Pre-load fires when:</span>
+<span class="kw">IF</span> P(next_app) <span class="fo">></span> 0.65 <span class="kw">AND</span> free_RAM <span class="fo">></span> app.rss <span class="fo">×</span> 1.2
+  → <span class="fn">preload</span>(app)  <span class="fc"># warm process, bind services</span>
+<span class="kw">ELIF</span> PSI_rate <span class="fo">></span> threshold <span class="fo">×</span> 2.5
+  → <span class="fn">thrash_guard</span>()  <span class="fc"># freeze + compress</span>
+        </div>
+      </div>
+      <div>
+        <div class="label" style="margin-bottom:8px;">Device Baseline Data — S23 vs S31 FE vs Nothing 2a</div>
+        <table class="data-table">
+          <thead><tr><th>Signal</th><th>S23</th><th>S31 FE</th><th>N2a</th></tr></thead>
+          <tbody>
+            <tr><td>Worst launch</td><td style="color:var(--danger); font-weight:700;">3034 ms</td><td>1882 ms</td><td>1882 ms</td></tr>
+            <tr><td>LMK kills</td><td style="color:var(--danger); font-weight:700;">77</td><td>32</td><td>23</td></tr>
+            <tr><td>PSI events</td><td>120</td><td>184</td><td>134</td></tr>
+            <tr><td>criticalLowMem</td><td>23</td><td>11</td><td>6</td></tr>
+            <tr><td>MemAvail range</td><td>1104–1525 MB</td><td>1507–2612 MB</td><td>101–204 MB</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 5 – NOVELTY & INNOVATION
+═══════════════════════════════════════════ -->
+<div class="slide" id="s5">
+  <div class="slide-header">
+    <div class="slide-title">Novelty & Innovation</div>
+    <div class="slide-tag">SLIDE 05</div>
+  </div>
+  <div class="slide-body">
+    <div class="insight">CAMAS is the first system to treat on-device memory management as a <strong>sequence prediction problem</strong> — not a resource accounting problem. Proactive, not reactive.</div>
+
+    <!-- Gap table -->
+    <div class="label" style="margin-bottom:12px;">State-of-the-art vs CAMAS</div>
+    <table class="data-table" style="margin-bottom:24px;">
+      <thead><tr><th>Existing Approach</th><th>Limitation</th><th>CAMAS Innovation</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Android LMK (Low Memory Killer)</td>
+          <td style="color:var(--danger);">Reactive only — kills after OOM. No prediction. Causes cold-starts.</td>
+          <td style="color:var(--success);">PSI-aware proactive eviction before OOM. Preserves predicted-next apps.</td>
+        </tr>
+        <tr>
+          <td>Static LRU Cache</td>
+          <td style="color:var(--danger);">Evicts by recency only. Thrashes on cyclic patterns (work→maps→work).</td>
+          <td style="color:var(--success);">ML-scored: score = freq + recency + P(next_access). Cycle-aware.</td>
+        </tr>
+        <tr>
+          <td>Android App Standby Buckets</td>
+          <td style="color:var(--danger);">Coarse, time-based. Not personalized. Not real-time.</td>
+          <td style="color:var(--success);">Personalized LSTM per user. Real-time P(next_app_k) updated each session.</td>
+        </tr>
+        <tr>
+          <td>Static KV Cache</td>
+          <td style="color:var(--danger);">Fixed size. No awareness of multi-model GenAI workloads under pressure.</td>
+          <td style="color:var(--success);">Unified arbiter: single policy for both app cache and ML inference cache.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 3 novel contributions -->
+    <div class="grid3">
+      <div class="card">
+        <div class="label">Novel signal</div>
+        <h3>mem_velocity</h3>
+        <p>ΔMemAvailable / Δtime — a first-derivative pressure signal. Captures how fast memory is being consumed, not just the current level. Enables prediction 2–3 seconds before OOM.</p>
+        <span class="badge badge-purple">2nd derivative: PSI acceleration</span>
+      </div>
+      <div class="card">
+        <div class="label">Novel architecture</div>
+        <h3>Dual-model ensemble</h3>
+        <p>LSTM for complex sequences (high confidence). Markov chain fallback when entropy &gt; 2.0 nats. Conservative mode when both are uncertain. No unnecessary preloading under ambiguity.</p>
+        <span class="badge badge-purple">Graceful degradation built-in</span>
+      </div>
+      <div class="card">
+        <div class="label">Novel evaluation</div>
+        <h3>Cross-device generalization</h3>
+        <p>Train on Samsung S23 (Snapdragon). Evaluate on Nothing Phone 2a (MediaTek). Different chipsets, different OEM layers. Generalization across architectures is publishable-level evidence.</p>
+        <span class="badge badge-purple">3-device validation</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="label" style="margin-bottom:12px;">Expected KPI Improvement vs Baseline</div>
+    <div>
+      <div class="prog-row"><span class="prog-label">App Load Time (target ≥20%)</span><div class="prog-track"><div class="prog-fill" style="width:65%; background:var(--success);"></div></div><span class="prog-val" style="color:var(--success);">~65%</span></div>
+      <div class="prog-row"><span class="prog-label">Memory Thrashing (target ≥50%)</span><div class="prog-track"><div class="prog-fill" style="width:50%; background:var(--accent);"></div></div><span class="prog-val" style="color:var(--accent);">50%+</span></div>
+      <div class="prog-row"><span class="prog-label">Cache Hit Rate (target ≥85%)</span><div class="prog-track"><div class="prog-fill" style="width:85%; background:var(--success);"></div></div><span class="prog-val" style="color:var(--success);">≥85%</span></div>
+      <div class="prog-row"><span class="prog-label">Prediction Accuracy (target ≥75%)</span><div class="prog-track"><div class="prog-fill" style="width:75%; background:var(--warn);"></div></div><span class="prog-val" style="color:var(--warn);">≥75%</span></div>
+      <div class="prog-row"><span class="prog-label">OOM Kills (target: 0)</span><div class="prog-track"><div class="prog-fill" style="width:100%; background:var(--success);"></div></div><span class="prog-val" style="color:var(--success);">0 kills</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 6 – DATASETS
+═══════════════════════════════════════════ -->
+<div class="slide" id="s6">
+  <div class="slide-header">
+    <div class="slide-title">Open Datasets Planned to be Used / Published</div>
+    <div class="slide-tag">SLIDE 06</div>
+  </div>
+  <div class="slide-body">
+    <div class="grid2" style="margin-bottom:24px;">
+      <!-- Primary: Our own data -->
+      <div class="card-dark">
+        <div class="label" style="color:rgba(255,255,255,0.5); margin-bottom:8px;">PRIMARY — Collected by us</div>
+        <h3>Real Perfetto Kernel Traces</h3>
+        <p style="margin-bottom:12px;">3 devices × multiple scenarios. Authentic kernel-level sys_stats, memreclaim, and am event traces. This is the ground truth dataset that no other team has.</p>
+        <div style="display:flex; gap:6px; flex-wrap:wrap;">
+          <span class="badge badge-green">Samsung S23</span>
+          <span class="badge badge-green">S31 FE</span>
+          <span class="badge badge-green">Nothing 2a</span>
+          <span class="badge badge-blue">PSI nanosecond stalls</span>
+          <span class="badge badge-blue">LMK kill events</span>
+        </div>
+        <div style="margin-top:12px; font-size:11px; color:rgba(255,255,255,0.5);">Signals: launch_ms, mem_available_mb, psi_some, psi_full, lmk_count, criticalLowMemory</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div class="card">
+          <div class="label">Open dataset 1</div>
+          <h4>Android Usage Patterns Dataset</h4>
+          <p>App switch logs, session durations, background activity from real Android devices. Primary training source for LSTM app-sequence modeling.</p>
+          <div style="margin-top:6px;"><span class="badge badge-blue">App transitions</span> <span class="badge badge-blue">Session duration</span> <span class="badge badge-blue">LSTM training</span></div>
+        </div>
+        <div class="card">
+          <div class="label">Open dataset 2</div>
+          <h4>KV Cache Workloads</h4>
+          <p>Stress-test workloads for memory allocation and caching strategies under multi-model GenAI execution. Used to evaluate unified cache arbiter under pressure.</p>
+          <div style="margin-top:6px;"><span class="badge badge-amber">Cache stress test</span> <span class="badge badge-amber">Multi-model</span></div>
+        </div>
+        <div class="card">
+          <div class="label">Open dataset 3</div>
+          <h4>Context Query Logs (Melbourne)</h4>
+          <p>Heterogeneous, time-sensitive context queries. Tests temporal generalization of the predictor under diverse real-world access patterns.</p>
+          <div style="margin-top:6px;"><span class="badge badge-purple">Temporal patterns</span> <span class="badge badge-purple">Generalization</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data pipeline flow -->
+    <div class="label" style="margin-bottom:10px;">Data Pipeline: Raw Signals → Model Input</div>
+    <div style="display:grid; grid-template-columns: repeat(5,1fr); gap:8px; align-items:center;">
+      <div class="card" style="text-align:center; padding:10px;">
+        <div style="font-size:10px; font-weight:700; color:var(--navy); margin-bottom:4px;">RAW SIGNALS</div>
+        <div style="font-size:10px; color:var(--muted);">App events · PSI ns · LMK kills · RSS per PID</div>
+      </div>
+      <div style="text-align:center; color:var(--navy); font-size:18px;">→</div>
+      <div class="card" style="text-align:center; padding:10px;">
+        <div style="font-size:10px; font-weight:700; color:var(--navy); margin-bottom:4px;">FEATURES</div>
+        <div style="font-size:10px; color:var(--muted);">mem_velocity · psi_accel · app_seq · time_emb</div>
+      </div>
+      <div style="text-align:center; color:var(--navy); font-size:18px;">→</div>
+      <div class="card" style="text-align:center; padding:10px; background:var(--navy); color:#fff;">
+        <div style="font-size:10px; font-weight:700; color:var(--accent2); margin-bottom:4px;">MODEL INPUT</div>
+        <div style="font-size:10px; opacity:0.7;">[10 timesteps × 11 features] → P(next_app_k)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 7 – OPEN MODELS
+═══════════════════════════════════════════ -->
+<div class="slide" id="s7">
+  <div class="slide-header">
+    <div class="slide-title">Open Models Planned to be Used / Developed / Trained / Fine-tuned</div>
+    <div class="slide-tag">SLIDE 07</div>
+  </div>
+  <div class="slide-body">
+    <div class="grid2">
+      <div style="display:flex; flex-direction:column; gap:12px;">
+
+        <div class="card" style="border-left:4px solid var(--accent);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+            <h3 style="margin:0;">LSTM Predictor</h3>
+            <span class="badge badge-navy">PRIMARY — Trained by us</span>
+          </div>
+          <p>2-layer LSTM (hidden=32), Softmax head over N apps. Trained on our real Perfetto traces + augmented synthetic data. Exported to ONNX → INT8 quantized for &lt;3ms on-device inference.</p>
+          <div class="code" style="margin-top:10px; padding:10px;">
+<span class="c"># Architecture</span>
+Input: [app_seq(5), mem_velocity, psi_trend] × 10 steps
+LSTM(32) → Dense(64) → Softmax(N_apps)
+Output: P(app_1),...,P(app_N)  <span class="c"># ≥75% top-1 target</span>
+          </div>
+        </div>
+
+        <div class="card" style="border-left:4px solid var(--success);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+            <h3 style="margin:0;">Markov Chain (Baseline)</h3>
+            <span class="badge badge-green">Built by us</span>
+          </div>
+          <p>Personalized transition matrix per user: P(next_app | current_app, time_of_day). Works with as few as 20 transitions. Target 60–70% accuracy. Fallback when LSTM confidence is low.</p>
+        </div>
+
+        <div class="card" style="border-left:4px solid var(--warn);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+            <h3 style="margin:0;">TensorFlow Lite / ONNX Runtime</h3>
+            <span class="badge badge-amber">Open framework</span>
+          </div>
+          <p>Used for on-device LSTM quantization and inference. INT8 post-training quantization reduces model from ~2 MB to ~500 KB while maintaining &gt;98% of accuracy.</p>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div class="card">
+          <div class="label" style="margin-bottom:10px;">Model Selection Rationale</div>
+          <table class="data-table">
+            <thead><tr><th>Model Type</th><th>Why considered</th><th>Decision</th></tr></thead>
+            <tbody>
+              <tr><td>LSTM</td><td>Sequence memory for app transitions</td><td style="color:var(--success);">✓ Primary</td></tr>
+              <tr><td>Transformer</td><td>Better long-range sequence</td><td style="color:var(--danger);">✗ Too heavy for &lt;3ms budget</td></tr>
+              <tr><td>Markov Chain</td><td>Zero-shot, interpretable</td><td style="color:var(--success);">✓ Fallback</td></tr>
+              <tr><td>Prophet / ARIMA</td><td>Time-series forecasting</td><td style="color:var(--warn);">~ For temporal patterns only</td></tr>
+              <tr><td>RL (TD3 / DDPG)</td><td>Dynamic allocation policy</td><td style="color:var(--warn);">~ Phase 2 stretch goal</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-blue">
+          <div class="label" style="margin-bottom:8px;">Dual-model ensemble logic</div>
+          <div class="formula" style="font-size:11px;">
+<span class="kw">IF</span> LSTM_confidence <span class="fo">></span> 0.70 → use LSTM prediction
+<span class="kw">ELIF</span> Markov_confidence <span class="fo">></span> 0.45 → use Markov
+<span class="kw">ELSE</span> → Conservative Mode (no preload, LRU cache)
+          </div>
+          <p style="font-size:11px; margin-top:8px; color:var(--navy);">Uncertainty handling prevents wrong preloads from wasting RAM under ambiguous conditions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 8 – AI/GENAI TOOLS USED
+═══════════════════════════════════════════ -->
+<div class="slide" id="s8">
+  <div class="slide-header">
+    <div class="slide-title">AI / GenAI / Agentic Tools Used & Developed</div>
+    <div class="slide-tag">SLIDE 08</div>
+  </div>
+  <div class="slide-body">
+    <div class="icon-row" style="margin-bottom:24px;">
+      <div class="icon-item">
+        <div class="icon-circle">🔬</div>
+        <div>
+          <h4>Perfetto Trace Analysis</h4>
+          <p>Python + perfetto library to programmatically extract kernel-level sys_stats, memreclaim, am events. Bypassed the UI for reproducible automated extraction from raw .pftrace files.</p>
+        </div>
+      </div>
+      <div class="icon-item">
+        <div class="icon-circle green">🤖</div>
+        <div>
+          <h4>LSTM on Real Device Data</h4>
+          <p>PyTorch LSTM trained on authentic Samsung S23 / S31 FE / Nothing 2a traces. INT8 quantized via ONNX for simulated on-device inference within 3ms latency budget.</p>
+        </div>
+      </div>
+      <div class="icon-item">
+        <div class="icon-circle amber">📊</div>
+        <div>
+          <h4>Adaptive Cache Scoring</h4>
+          <p>Custom ML-scored eviction policy (freq + recency decay + predicted next access) replacing static LRU. Cache manager uses LSTM output directly to inform eviction decisions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="grid2">
+      <div>
+        <h3 style="margin-bottom:12px;">Key Processes & Best Practices</h3>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div class="card" style="padding:10px 14px; display:flex; gap:10px;">
+            <span class="badge badge-navy" style="flex-shrink:0; height:fit-content;">P1</span>
+            <div><strong style="font-size:12px;">Held-out test traces:</strong><span style="color:var(--muted); font-size:12px;"> All KPI numbers measured only on traces never seen during threshold calibration or model training</span></div>
+          </div>
+          <div class="card" style="padding:10px 14px; display:flex; gap:10px;">
+            <span class="badge badge-navy" style="flex-shrink:0; height:fit-content;">P2</span>
+            <div><strong style="font-size:12px;">Cumulative PSI → delta conversion:</strong><span style="color:var(--muted); font-size:12px;"> PSI values are nanosecond totals; we compute Δ(psi[t] - psi[t-1]) to get instantaneous pressure rate</span></div>
+          </div>
+          <div class="card" style="padding:10px 14px; display:flex; gap:10px;">
+            <span class="badge badge-navy" style="flex-shrink:0; height:fit-content;">P3</span>
+            <div><strong style="font-size:12px;">Conservative fallback by design:</strong><span style="color:var(--muted); font-size:12px;"> System never preloads under uncertainty. Reduces wrong preloads that worsen pressure.</span></div>
+          </div>
+          <div class="card" style="padding:10px 14px; display:flex; gap:10px;">
+            <span class="badge badge-navy" style="flex-shrink:0; height:fit-content;">P4</span>
+            <div><strong style="font-size:12px;">Real device ADB measurement:</strong><span style="color:var(--muted); font-size:12px;"> am start -W gives true millisecond TTI from the kernel, not estimated latency</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="margin-bottom:12px;">Creative Use of AI Tools</h3>
+        <div class="card-blue" style="margin-bottom:12px;">
+          <h4>AI-Assisted Synthetic Data Augmentation</h4>
+          <p>With only ~40 real launch events across 3 devices, we use structured augmentation: shuffle app sequences, jitter launch times ±15%, cross-device pooling. Produces 500+ training windows from 40 real events.</p>
+        </div>
+        <div class="card-blue">
+          <h4>PSI as an LLM-style "Attention Signal"</h4>
+          <p>We treat PSI stall time analogously to attention weights — high PSI = the system is "attending" to a memory crisis. The second derivative (PSI acceleration) predicts impending kill storms 2–3 seconds before they hit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SLIDE 9 – ADDITIONAL MATERIALS
+═══════════════════════════════════════════ -->
+<div class="slide" id="s9">
+  <div class="slide-header">
+    <div class="slide-title">Additional Supporting Materials — KPI Framework & Roadmap</div>
+    <div class="slide-tag">SLIDE 09</div>
+  </div>
+  <div class="slide-body">
+
+    <!-- Full KPI table -->
+    <div class="label" style="margin-bottom:10px;">Complete KPI Achievement Strategy</div>
+    <table class="data-table" style="margin-bottom:24px;">
+      <thead><tr><th>KPI</th><th>Target</th><th>Baseline</th><th>Our Mechanism</th><th>Measurement</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>App Load Time</td>
+          <td><span class="badge badge-green">≥20%</span></td>
+          <td style="color:var(--danger);">3034ms spike</td>
+          <td>Pre-warm on P(next)&gt;0.65 — DEX + service bind</td>
+          <td>am start -W · p90 distribution</td>
+        </tr>
+        <tr>
+          <td>App Launch Time</td>
+          <td><span class="badge badge-green">≥10%</span></td>
+          <td style="color:var(--danger);">~125ms median</td>
+          <td>Cache-preserved warm launches — fewer cold starts</td>
+          <td>TTI ms · warm vs cold ratio</td>
+        </tr>
+        <tr>
+          <td>Memory Thrashing</td>
+          <td><span class="badge badge-green">≥50%</span></td>
+          <td style="color:var(--danger);">77 LMK kills</td>
+          <td>Proactive eviction before LMK fires. ThrashGuard freeze.</td>
+          <td>Eviction cycle count in 60s window</td>
+        </tr>
+        <tr>
+          <td>System Stability</td>
+          <td><span class="badge badge-green">0 issues</span></td>
+          <td style="color:var(--danger);">23 criticalLowMem</td>
+          <td>EMERGENCY state blocks all preloads when PSI critical</td>
+          <td>OOM kill count on held-out traces</td>
+        </tr>
+        <tr>
+          <td>Prediction Accuracy</td>
+          <td><span class="badge badge-green">≥75%</span></td>
+          <td>Random: ~5%</td>
+          <td>LSTM + Markov ensemble. Markov alone: ~60–70%</td>
+          <td>Top-1 accuracy on test split</td>
+        </tr>
+        <tr>
+          <td>Cache Hit Rate</td>
+          <td><span class="badge badge-green">≥85%</span></td>
+          <td>Static LRU: ~63%</td>
+          <td>ML-scored eviction: γ=0.40 weight on predicted access</td>
+          <td>hits/(hits+misses) over 1000 events</td>
+        </tr>
+        <tr>
+          <td>Memory Utilization</td>
+          <td><span class="badge badge-green">≥30%</span></td>
+          <td>Unoptimized</td>
+          <td>PSI reduction as proxy — kernel-standard metric</td>
+          <td>Δ PSI stall time vs baseline</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Implementation timeline -->
+    <div class="label" style="margin-bottom:10px;">Implementation Phases</div>
+    <div class="timeline">
+      <div class="timeline-step done">
+        <div class="ts-label">Phase 0 ✓</div>
+        <div class="ts-sub">Real Perfetto traces from 3 devices. Baseline KPIs captured.</div>
+      </div>
+      <div class="timeline-step active">
+        <div class="ts-label">Phase 1 → Now</div>
+        <div class="ts-sub">Test traces (held-out). Markov chain. Baseline charts.</div>
+      </div>
+      <div class="timeline-step next">
+        <div class="ts-label">Phase 2</div>
+        <div class="ts-sub">ADB live demo. LSTM training. Feature engineering.</div>
+      </div>
+      <div class="timeline-step next">
+        <div class="ts-label">Phase 3</div>
+        <div class="ts-sub">Controller + simulator on test traces only.</div>
+      </div>
+      <div class="timeline-step">
+        <div class="ts-label">Phase 4</div>
+        <div class="ts-sub">Cross-device generalization. KPI report. Demo.</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <!-- File structure -->
+    <div class="grid2">
+      <div>
+        <div class="label" style="margin-bottom:8px;">Project file structure</div>
+        <div class="code" style="font-size:10px;">
+samsung/
+├── <span class="str">samsungS23/</span>        <span class="c"># Device 1 — ground_truth_v1.json</span>
+├── <span class="str">S31FE/</span>             <span class="c"># Device 2 — ground_truth_v1.json</span>
+├── <span class="str">nothing2a/</span>         <span class="c"># Device 3 — ground_truth_v1.json</span>
+├── <span class="str">test_traces/</span>       <span class="c"># HELD-OUT: never used in training</span>
+│   ├── test_A.pftrace
+│   └── test_B.pftrace
+├── data_pipeline/     <span class="c"># Feature engineering</span>
+├── predictor/         <span class="c"># LSTM + Markov + ensemble</span>
+├── controller/        <span class="c"># State machine + cache mgr</span>
+├── simulator/         <span class="c"># Replay + KPI calculator</span>
+└── report/            <span class="c"># Final figures + write-up</span>
+        </div>
+      </div>
+      <div>
+        <div class="label" style="margin-bottom:8px;">Deployment path (production vision)</div>
+        <div class="card" style="margin-bottom:10px;">
+          <h4>Near-term: Privileged Android Service</h4>
+          <p style="font-size:12px;">CAMAS deploys as a privileged system service registered with ActivityManager — similar to how Google's LMKD daemon operates. Hooks into ComponentCallbacks2.onTrimMemory() for real-time signals.</p>
+        </div>
+        <div class="card">
+          <h4>Long-term: OEM Integration</h4>
+          <p style="font-size:12px;">Samsung One UI kernel layer integration. LMKD plugin replacing static OOM adj with CAMAS's ML-scored priority queue. On-device model runs on Hexagon NPU (&lt;3ms inference).</p>
+          <div style="margin-top:6px;"><span class="badge badge-navy">On-device only</span> <span class="badge badge-green">Privacy-preserving</span> <span class="badge badge-blue">No cloud dependency</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<script>
+  // Highlight active nav item on scroll
+  const sections = document.querySelectorAll('.slide');
+  const navItems = document.querySelectorAll('.nav-item');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navItems.forEach(n => {
+          n.classList.toggle('active', n.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

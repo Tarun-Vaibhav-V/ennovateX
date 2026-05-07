@@ -1,0 +1,378 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans,system-ui);color:var(--color-text-primary);background:transparent;font-size:14px;line-height:1.6}
+
+.tab-row{display:flex;gap:0;border-bottom:0.5px solid var(--color-border-tertiary);overflow-x:auto;scrollbar-width:none}
+.tab-row::-webkit-scrollbar{display:none}
+.tab{padding:10px 16px;cursor:pointer;font-size:12px;color:var(--color-text-secondary);border-bottom:2px solid transparent;white-space:nowrap;transition:all .15s}
+.tab.on{color:var(--color-text-info);border-bottom-color:var(--color-border-info);font-weight:500}
+.panel{display:none;padding:20px 0}
+.panel.on{display:block}
+
+.score-header{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+.score-pill{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:16px;text-align:center}
+.score-pill .num{font-size:28px;font-weight:500;line-height:1}
+.score-pill .lbl{font-size:11px;color:var(--color-text-secondary);margin-top:4px}
+.score-pill.great .num{color:var(--color-text-success)}
+.score-pill.ok .num{color:var(--color-text-warning)}
+.score-pill.risk .num{color:var(--color-text-danger)}
+
+.judge-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:16px;margin-bottom:12px}
+.judge-card-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.verdict-badge{font-size:10px;font-weight:500;padding:3px 10px;border-radius:100px;flex-shrink:0}
+.verdict-badge.strong{background:var(--color-background-success);color:var(--color-text-success)}
+.verdict-badge.ok{background:var(--color-background-warning);color:var(--color-text-warning)}
+.verdict-badge.gap{background:var(--color-background-danger);color:var(--color-text-danger)}
+.verdict-badge.critical{background:var(--color-background-danger);color:var(--color-text-danger);border:1px solid var(--color-border-danger)}
+.judge-title{font-weight:500;font-size:14px}
+.judge-body{font-size:13px;color:var(--color-text-secondary);line-height:1.7}
+.judge-quote{font-size:12px;font-style:italic;color:var(--color-text-tertiary);border-left:2px solid var(--color-border-secondary);padding-left:10px;margin:8px 0}
+.fix-box{background:var(--color-background-info);border-radius:var(--border-radius-md);padding:10px 14px;margin-top:10px;font-size:12px;color:var(--color-text-info);line-height:1.7}
+.fix-label{font-weight:500;margin-bottom:2px}
+
+.gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.gap-card{border-radius:var(--border-radius-lg);padding:14px}
+.gap-card.red{background:var(--color-background-danger);border:0.5px solid var(--color-border-danger)}
+.gap-card.green{background:var(--color-background-success);border:0.5px solid var(--color-border-success)}
+.gap-card h4{font-size:13px;font-weight:500;margin-bottom:6px}
+.gap-card h4.red{color:var(--color-text-danger)}
+.gap-card h4.green{color:var(--color-text-success)}
+.gap-card ul{list-style:none;font-size:12px;color:var(--color-text-secondary)}
+.gap-card ul li{padding:3px 0;display:flex;gap:6px}
+.gap-card ul li::before{content:'→';color:var(--color-text-tertiary);flex-shrink:0}
+
+.roadmap-item{display:flex;gap:14px;margin-bottom:16px;align-items:flex-start}
+.roadmap-step{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;flex-shrink:0}
+.roadmap-step.now{background:var(--color-background-danger);color:var(--color-text-danger)}
+.roadmap-step.soon{background:var(--color-background-warning);color:var(--color-text-warning)}
+.roadmap-step.later{background:var(--color-background-success);color:var(--color-text-success)}
+.roadmap-step.gold{background:var(--color-background-info);color:var(--color-text-info)}
+.roadmap-body h4{font-size:13px;font-weight:500;margin-bottom:4px}
+.roadmap-body p{font-size:12px;color:var(--color-text-secondary);line-height:1.6}
+.roadmap-body code{font-family:var(--font-mono,monospace);font-size:11px;background:var(--color-background-secondary);padding:1px 5px;border-radius:3px;color:var(--color-text-primary)}
+
+.criteria-row{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px 14px;margin-bottom:8px}
+.criteria-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.criteria-name{font-size:13px;font-weight:500}
+.criteria-score{font-family:var(--font-mono,monospace);font-size:12px}
+.criteria-score.high{color:var(--color-text-success)}
+.criteria-score.mid{color:var(--color-text-warning)}
+.criteria-score.low{color:var(--color-text-danger)}
+.criteria-bar-track{height:4px;background:var(--color-border-tertiary);border-radius:2px;overflow:hidden;margin-bottom:6px}
+.criteria-bar-fill{height:100%;border-radius:2px}
+.criteria-note{font-size:11px;color:var(--color-text-tertiary)}
+
+.highlight-box{background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);border-radius:var(--border-radius-md);padding:12px 16px;margin-bottom:16px}
+.highlight-box p{font-size:13px;color:var(--color-text-warning);line-height:1.6}
+.highlight-box strong{color:var(--color-text-warning)}
+
+.action-item{display:flex;gap:10px;padding:10px 0;border-bottom:0.5px solid var(--color-border-tertiary);align-items:flex-start}
+.action-item:last-child{border:none}
+.action-priority{font-size:10px;font-weight:500;padding:2px 8px;border-radius:100px;flex-shrink:0;margin-top:2px}
+.priority-now{background:var(--color-background-danger);color:var(--color-text-danger)}
+.priority-today{background:var(--color-background-warning);color:var(--color-text-warning)}
+.priority-next{background:var(--color-background-success);color:var(--color-text-success)}
+.priority-gold{background:var(--color-background-info);color:var(--color-text-info)}
+.action-text h5{font-size:13px;font-weight:500;margin-bottom:2px}
+.action-text p{font-size:12px;color:var(--color-text-secondary)}
+
+@media(max-width:540px){
+  .score-header{grid-template-columns:1fr 1fr}
+  .gap-grid{grid-template-columns:1fr}
+}
+</style>
+
+<h2 class="sr-only">Samsung judge review of the CAMAS context-adaptive memory plan — scores, gaps, and path to top 1%</h2>
+
+<div class="tab-row">
+  <div class="tab on" onclick="show('t1',this)">Overall verdict</div>
+  <div class="tab" onclick="show('t2',this)">How judges evaluate</div>
+  <div class="tab" onclick="show('t3',this)">Critical gaps</div>
+  <div class="tab" onclick="show('t4',this)">Top 1% roadmap</div>
+  <div class="tab" onclick="show('t5',this)">Immediate actions</div>
+</div>
+
+<div id="t1" class="panel on">
+  <div class="score-header">
+    <div class="score-pill great"><div class="num">A–</div><div class="lbl">Data quality</div></div>
+    <div class="score-pill great"><div class="num">B+</div><div class="lbl">Architecture</div></div>
+    <div class="score-pill ok"><div class="num">C+</div><div class="lbl">Proof of KPIs</div></div>
+    <div class="score-pill risk"><div class="num">D</div><div class="lbl">Demo story</div></div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge strong">Strong</span>
+      <span class="judge-title">Real kernel-level data from 3 devices — this is rare and impressive</span>
+    </div>
+    <div class="judge-body">Most teams submit synthetic traces or Android emulator outputs. You have actual Perfetto `sys_stats`, `memreclaim`, and `am` traces from production Samsung hardware with 77 kill events and 3034ms cold starts. This is the foundation that makes your baseline credible. Judges who are Samsung engineers will immediately recognize these as authentic kernel PSI values.</div>
+    <div class="judge-quote">"This team didn't fake their problem. The baseline numbers are real and they're damning — 77 LMK kills in 45 seconds on an S23 is a legitimate catastrophe that demands a solution."</div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge strong">Strong</span>
+      <span class="judge-title">3-layer architecture maps cleanly to all 7 KPIs</span>
+    </div>
+    <div class="judge-body">The Observe → Predict → Act structure is well-reasoned. The dual-model strategy (Markov fallback + LSTM primary) shows engineering maturity — you're not betting everything on one approach. The state machine design (MONITOR → PRELOAD → EVICT → EMERGENCY) is exactly the kind of production-thinking judges respect.</div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge gap">Gap</span>
+      <span class="judge-title">Your simulator proves nothing yet — it's your biggest risk</span>
+    </div>
+    <div class="judge-body">The plan says "the simulator IS the deliverable" — but a simulator that replays your own training traces and shows improvement is just overfitting on paper. Judges know this. If you simulate on the same data you designed the thresholds for, you'll get great-looking numbers that mean nothing. You need a held-out test trace that the controller has never seen.</div>
+    <div class="fix-box"><span class="fix-label">Fix:</span> Record 2 completely separate "test traces" that are NOT used in any threshold tuning or training. Show your KPI results only on these held-out traces. This one change separates credible results from cherry-picked ones.</div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge critical">Critical gap</span>
+      <span class="judge-title">No "before vs after on the same physical device" moment</span>
+    </div>
+    <div class="judge-body">Right now your entire proof lives in Python simulation. This is understandable technically but devastating for judges. The question every judge will ask internally: "Is this a real system or a spreadsheet that claims to be a real system?" Without a single live device moment — even one ADB measurement — you can't answer that question convincingly.</div>
+    <div class="fix-box"><span class="fix-label">Fix:</span> Use <code style="font-size:11px">adb shell am start -W</code> to capture one real before/after launch time on the S23. Even a single app (Gallery) with a real 35% improvement measured live destroys any simulation-only presentation.</div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge ok">Weak</span>
+      <span class="judge-title">The story starts with data, not with the user's pain</span>
+    </div>
+    <div class="judge-body">Your plan starts with "here's the data we collected." Judges want to start with "here's what a user suffers through." The 3034ms cold start on an S23 — that's a 3-second white screen of death while a user is trying to show someone a photo. Lead with that human moment, then show the data that quantifies it.</div>
+  </div>
+</div>
+
+<div id="t2" class="panel">
+  <div class="highlight-box"><p><strong>Samsung judges are systems engineers, not ML researchers.</strong> They think in terms of: does it work on the actual device? Is the improvement real and measurable? Can it ship? They will be suspicious of ML-heavy demos with no device component.</p></div>
+
+  <div class="criteria-row">
+    <div class="criteria-head"><span class="criteria-name">Technical depth — kernel, not app layer</span><span class="criteria-score high">You: 8/10</span></div>
+    <div class="criteria-bar-track"><div class="criteria-bar-fill" style="width:80%;background:var(--color-border-success)"></div></div>
+    <div class="criteria-note">PSI values, LMK kills, Perfetto traces — you're working at the right layer. Most teams never get here.</div>
+  </div>
+
+  <div class="criteria-row">
+    <div class="criteria-head"><span class="criteria-name">KPI proof — are numbers real or theoretical?</span><span class="criteria-score mid">You: 4/10</span></div>
+    <div class="criteria-bar-track"><div class="criteria-bar-fill" style="width:40%;background:var(--color-border-warning)"></div></div>
+    <div class="criteria-note">Right now you have projected numbers ("should improve to &lt;300ms"), not measured numbers. Judges heavily discount projections. Even one real ADB measurement changes this score dramatically.</div>
+  </div>
+
+  <div class="criteria-row">
+    <div class="criteria-head"><span class="criteria-name">Novelty — does this solve something new?</span><span class="criteria-score high">You: 7/10</span></div>
+    <div class="criteria-bar-track"><div class="criteria-bar-fill" style="width:70%;background:var(--color-border-success)"></div></div>
+    <div class="criteria-note">PSI-aware proactive eviction is genuinely novel over standard LRU. The mem_velocity feature (ΔMemAvailable/Δtime) as a predictive signal is smart and defensible.</div>
+  </div>
+
+  <div class="criteria-row">
+    <div class="criteria-head"><span class="criteria-name">Completeness — all 7 KPIs addressed?</span><span class="criteria-score mid">You: 6/10</span></div>
+    <div class="criteria-bar-track"><div class="criteria-bar-fill" style="width:60%;background:var(--color-border-warning)"></div></div>
+    <div class="criteria-note">KPI 5 (prediction accuracy) and KPI 6 (cache hit rate) have no measured numbers yet. KPI 7 (memory utilization efficiency) definition is creative but judges may challenge your "useful_memory" metric.</div>
+  </div>
+
+  <div class="criteria-row">
+    <div class="criteria-head"><span class="criteria-name">Demo quality — can you show it live?</span><span class="criteria-score low">You: 2/10</span></div>
+    <div class="criteria-bar-track"><div class="criteria-bar-fill" style="width:20%;background:var(--color-border-danger)"></div></div>
+    <div class="criteria-note">Currently zero demo capability. This is the single biggest score gap. A good live demo can overcome weak ML numbers. The reverse is rarely true.</div>
+  </div>
+
+  <div class="criteria-row">
+    <div class="criteria-head"><span class="criteria-name">Real-world deployability — can Samsung ship this?</span><span class="criteria-score mid">You: 5/10</span></div>
+    <div class="criteria-bar-track"><div class="criteria-bar-fill" style="width:50%;background:var(--color-border-warning)"></div></div>
+    <div class="criteria-note">The simulation approach doesn't answer "what would it take to put this in One UI?" You need one sentence in your pitch about the deployment path — LMKD plugin, Magisk module, or AOSP system service.</div>
+  </div>
+
+  <div class="criteria-row">
+    <div class="criteria-head"><span class="criteria-name">Multi-device story — S23 + S31FE + Nothing 2a</span><span class="criteria-score high">You: 8/10</span></div>
+    <div class="criteria-bar-track"><div class="criteria-bar-fill" style="width:80%;background:var(--color-border-success)"></div></div>
+    <div class="criteria-note">Three devices with different RAM profiles (6GB vs 8GB) is genuinely impressive. The cross-device generalization story is strong. Make sure you tell it explicitly in the pitch.</div>
+  </div>
+</div>
+
+<div id="t3" class="panel">
+  <div class="gap-grid">
+    <div class="gap-card green">
+      <h4 class="green">What you have that others don't</h4>
+      <ul>
+        <li>Real PSI nanosecond kernel data</li>
+        <li>3 actual device baselines</li>
+        <li>77 LMK kills — damning baseline proof</li>
+        <li>mem_velocity as a novel signal</li>
+        <li>PSI acceleration (2nd derivative)</li>
+        <li>Dual-model ensemble design</li>
+        <li>Scope boundaries clearly defined</li>
+        <li>Cross-device transfer plan</li>
+      </ul>
+    </div>
+    <div class="gap-card red">
+      <h4 class="red">Gaps that will cost you the top spot</h4>
+      <ul>
+        <li>Zero real measured improvement</li>
+        <li>Simulator trained + tested on same data</li>
+        <li>No live device demo moment</li>
+        <li>LSTM not trained yet — no accuracy proof</li>
+        <li>No held-out test trace</li>
+        <li>Gallery RSS missing on S23/S31FE</li>
+        <li>No deployment path statement</li>
+        <li>Narrative starts with data, not user pain</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge critical">Gap 1 — fatal if not fixed</span>
+      <span class="judge-title">Your "before vs after" is simulated on training data</span>
+    </div>
+    <div class="judge-body">You plan to "replay real traces with and without CAM" — but these are the same traces you used to design your controller thresholds. Your EVICT threshold was chosen because it works on these specific traces. Showing improvement on your own training data is circular. A judge who knows ML will immediately spot this and it will invalidate your entire KPI table.</div>
+    <div class="fix-box"><span class="fix-label">Fix right now:</span> Record 2 new Perfetto traces TONIGHT — different apps, different time of day. Lock them in a folder called <code style="font-size:11px">/test_traces/</code>. Never let your threshold tuning or LSTM training touch these. All final KPI numbers come from these traces only.</div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge critical">Gap 2 — kills demo score</span>
+      <span class="judge-title">No physical device moment in the demo</span>
+    </div>
+    <div class="judge-body">Your demo is: Python dashboard → simulated replay → simulated KPI numbers. There is no phone on the table. This is the "PowerPoint architecture" problem — it looks great until a judge says "can you show me on the actual device?" and the answer is no.</div>
+    <div class="fix-box"><span class="fix-label">Fix:</span> Add one ADB command to your demo: <code style="font-size:11px">adb shell am force-stop com.samsung.android.gallery && adb shell am start -W com.samsung.android.gallery</code>. Run it without CAMAS (baseline). Then run it after your ADB-based preload command fires. Show real milliseconds. Even if the improvement is only 15%, it's real and judges respect real.</div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge gap">Gap 3 — weakens ML credibility</span>
+      <span class="judge-title">Prediction accuracy is a claim, not a measurement</span>
+    </div>
+    <div class="judge-body">The plan targets ≥75% accuracy but hasn't trained the LSTM yet. The Markov chain is not built. These are projections. Judges will ask: "what is your actual measured accuracy on your test data?" If you can't answer this with a number and a confusion matrix, KPI 5 is unproven.</div>
+    <div class="fix-box"><span class="fix-label">Fix:</span> Build the Markov chain first (1–2 hours). Evaluate it on the held-out test trace immediately. Even 55% accuracy is a real number. It beats the random baseline (5%) by 11×. Say that. Then the LSTM improvement on top of that is the bonus.</div>
+  </div>
+
+  <div class="judge-card">
+    <div class="judge-card-head">
+      <span class="verdict-badge ok">Gap 4 — weakens score</span>
+      <span class="judge-title">Memory utilization efficiency metric is self-defined and unchallengeable</span>
+    </div>
+    <div class="judge-body">KPI 7 uses "useful_memory = memory used by apps launched within 30s" — but you choose the 30-second window. A judge can ask: "why 30 seconds? At 60 seconds your efficiency score drops by half." Self-defined metrics invite this challenge.</div>
+    <div class="fix-box"><span class="fix-label">Fix:</span> Anchor to an industry standard. Use working set size (WSS) — the set of pages accessed in the last N seconds as defined by Linux kernel documentation. Or use PSI reduction as your efficiency proxy — it's a kernel-standard measure that doesn't require you to define "useful."</div>
+  </div>
+</div>
+
+<div id="t4" class="panel">
+  <div class="highlight-box"><p><strong>Top 1% is achievable from where you are.</strong> You have the rarest thing — real data. The gap is execution. Here's the exact path, ordered by impact per hour.</p></div>
+
+  <div class="roadmap-item">
+    <div class="roadmap-step now">1</div>
+    <div class="roadmap-body">
+      <h4>Tonight: Record 2 clean test traces (2 hours)</h4>
+      <p>Record a 10-minute "gaming session → gallery → browser" trace and a separate "idle → camera → maps" trace. Label them <code>test_A.pftrace</code> and <code>test_B.pftrace</code>. These become your ground truth. All final results come from here. This single action upgrades your credibility from "simulation" to "validated."</p>
+    </div>
+  </div>
+
+  <div class="roadmap-item">
+    <div class="roadmap-step now">2</div>
+    <div class="roadmap-body">
+      <h4>Tonight: Build the Markov chain (1–2 hours)</h4>
+      <p>It's 30 lines of Python. Build the transition matrix from your training traces. Evaluate on <code>test_A.pftrace</code>. You'll get a real accuracy number immediately — even 50–60% is a result you can show. This proves KPI 5 with actual data, not projections.</p>
+    </div>
+  </div>
+
+  <div class="roadmap-item">
+    <div class="roadmap-step soon">3</div>
+    <div class="roadmap-body">
+      <h4>Day 2: ADB live demo capability (3 hours)</h4>
+      <p>Write a 50-line Python script: read <code>ActivityManager.getMemoryInfo()</code> via ADB, run the Markov prediction, execute <code>am start</code> pre-warm for predicted app. Measure real TTI with <code>am start -W</code> before and after. You now have a real device demo. This is your demo centerpiece — the phone on the table that judges can touch.</p>
+    </div>
+  </div>
+
+  <div class="roadmap-item">
+    <div class="roadmap-step soon">4</div>
+    <div class="roadmap-body">
+      <h4>Day 2–3: Build visualize_baseline.py (2 hours)</h4>
+      <p>Three charts from your real S23 data: (1) launch latency histogram showing the 3034ms tail, (2) MemAvailable vs time showing the pressure cliff before each kill event, (3) LMK kill timeline. These are your "before" slides. They should be brutal — make judges feel the problem before you show the fix.</p>
+    </div>
+  </div>
+
+  <div class="roadmap-item">
+    <div class="roadmap-step later">5</div>
+    <div class="roadmap-body">
+      <h4>Day 3–4: LSTM training on augmented data (4 hours)</h4>
+      <p>Augment synthetic data (shuffle sequences, jitter ±15%), merge with real traces. Train small LSTM (32 hidden units). Evaluate on <code>test_B.pftrace</code>. If accuracy &gt; Markov baseline, you have a compelling ML story. If not, Markov is fine — report honestly and show the ensemble beats both individually.</p>
+    </div>
+  </div>
+
+  <div class="roadmap-item">
+    <div class="roadmap-step later">6</div>
+    <div class="roadmap-body">
+      <h4>Day 4–5: Simulator on held-out traces only (3 hours)</h4>
+      <p>Run <code>memory_simulator.py</code> on <code>test_A</code> and <code>test_B</code> only. Report KPI numbers from these traces only. Explicitly state in your report: "These traces were not seen during threshold calibration or model training." That sentence is worth 20 points in judge credibility.</p>
+    </div>
+  </div>
+
+  <div class="roadmap-item">
+    <div class="roadmap-step gold">7</div>
+    <div class="roadmap-body">
+      <h4>Gold tier: 3-device cross-generalization story (if time allows)</h4>
+      <p>Train only on S23 data. Test on Nothing 2a traces. Show that your controller generalizes across different chipsets (Snapdragon vs MediaTek vs Exynos). This is publishable-level evidence of generalization and will make Samsung engineers lean forward. Very few hackathon teams can show this.</p>
+    </div>
+  </div>
+</div>
+
+<div id="t5" class="panel">
+  <div class="judge-card" style="margin-bottom:20px">
+    <div class="judge-card-head">
+      <span class="verdict-badge strong">Your pitch reframe</span>
+      <span class="judge-title">Don't start with data — start with the 3-second moment</span>
+    </div>
+    <div class="judge-body">"Imagine you're trying to show your friend a photo. You tap Gallery. You wait. And wait. Three seconds of a white screen. On a Samsung S23 with 8 gigabytes of RAM. That's not acceptable — and we have the kernel traces to prove it happens 77 times in 45 seconds." <em>Now</em> you show the data.</div>
+  </div>
+
+  <div class="action-item">
+    <span class="action-priority priority-now">DO NOW</span>
+    <div class="action-text"><h5>Record test_A and test_B Perfetto traces tonight</h5><p>10 min each, different app patterns. Never use these for training or threshold tuning. All final KPI numbers come from these traces only.</p></div>
+  </div>
+  <div class="action-item">
+    <span class="action-priority priority-now">DO NOW</span>
+    <div class="action-text"><h5>Build Markov chain — measure real accuracy</h5><p>30 lines of Python. You'll have a real accuracy number within 2 hours. Even 55% is a result. Report it honestly.</p></div>
+  </div>
+  <div class="action-item">
+    <span class="action-priority priority-today">TODAY</span>
+    <div class="action-text"><h5>Create the ADB live demo script</h5><p><code>am force-stop → am start -W</code> baseline measurement. Then run Markov predictor → <code>am start --activity-no-history</code> pre-warm → measure warm launch TTI. Real phone, real milliseconds on screen.</p></div>
+  </div>
+  <div class="action-item">
+    <span class="action-priority priority-today">TODAY</span>
+    <div class="action-text"><h5>Build the 3 baseline charts from S23 data</h5><p>Launch latency histogram, MemAvailable pressure cliff, LMK kill storm timeline. These are your "before" that makes judges feel the problem viscerally.</p></div>
+  </div>
+  <div class="action-item">
+    <span class="action-priority priority-next">NEXT</span>
+    <div class="action-text"><h5>Add this sentence to every KPI result you report</h5><p>"Measured on held-out test traces not used in threshold calibration or model training." This single sentence changes how judges read every number that follows it.</p></div>
+  </div>
+  <div class="action-item">
+    <span class="action-priority priority-next">NEXT</span>
+    <div class="action-text"><h5>Replace "useful_memory" metric with PSI reduction for KPI 7</h5><p>PSI (pressure stall information) is a Linux kernel standard. Using it anchors your efficiency metric to something Samsung engineers recognize and trust, rather than a self-defined window.</p></div>
+  </div>
+  <div class="action-item">
+    <span class="action-priority priority-gold">GOLD</span>
+    <div class="action-text"><h5>Add one sentence on deployment path</h5><p>"In production, CAM would deploy as a privileged Android system service registered with ActivityManager, similar to how Google's LMKD daemon operates." This shows you understand where this goes beyond the hackathon.</p></div>
+  </div>
+  <div class="action-item">
+    <span class="action-priority priority-gold">GOLD</span>
+    <div class="action-text"><h5>Cross-device generalization test</h5><p>Train on S23, evaluate on Nothing 2a. Show your controller generalizes across chipsets. This is your "publishable result" moment and will make Samsung engineers visibly interested.</p></div>
+  </div>
+
+  <div style="margin-top:20px;padding:14px;background:var(--color-background-secondary);border-radius:var(--border-radius-lg)">
+    <div style="font-size:12px;color:var(--color-text-secondary);line-height:1.8">
+      <div style="font-weight:500;color:var(--color-text-primary);margin-bottom:8px">The top 1% formula</div>
+      Real kernel data (you have it) + Real measured improvement (get it tonight) + Live device moment (ADB script) + Held-out test traces (record tonight) + Cross-device story (bonus) = judges who lean forward and ask "can we see the code?"
+    </div>
+  </div>
+</div>
+
+<script>
+function show(id, tab){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  tab.classList.add('on');
+}
+</script>
