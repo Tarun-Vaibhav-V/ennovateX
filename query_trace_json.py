@@ -63,8 +63,7 @@ SELECT
 FROM counter AS c
 JOIN process_counter_track AS t ON c.track_id = t.id
 JOIN process AS p USING (upid)
-WHERE t.name = 'mem.rss' 
-  AND p.name LIKE '%gallery%'
+WHERE t.name = 'mem.rss'
 ORDER BY ts ASC;
     """
 }
