@@ -1,0 +1,466 @@
+{
+  "query1_launch": [
+    {
+      "ts": 432924230797036,
+      "duration_ms": 52.969462,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 432927444175498,
+      "duration_ms": 800.939,
+      "name": "launching: com.android.chrome"
+    },
+    {
+      "ts": 432982522032732,
+      "duration_ms": 40.245231,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 432986013034886,
+      "duration_ms": 717.644308,
+      "name": "launching: com.android.vending"
+    },
+    {
+      "ts": 433004132652656,
+      "duration_ms": 58.591077,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 433012318433657,
+      "duration_ms": 104.517231,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 433013862400349,
+      "duration_ms": 127.149846,
+      "name": "launching: com.android.vending"
+    },
+    {
+      "ts": 433014603520118,
+      "duration_ms": 65.875924,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 433016729057580,
+      "duration_ms": 45.716308,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 433017785712965,
+      "duration_ms": 86.400692,
+      "name": "launching: com.android.vending"
+    },
+    {
+      "ts": 433022149864350,
+      "duration_ms": 35.318538,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 433024003257888,
+      "duration_ms": 189.627462,
+      "name": "launching: com.android.traceur"
+    }
+  ],
+  "query2_mem_available": [],
+  "query3_psi_mem_some": [
+    {
+      "ts": 433003835686887,
+      "psi_val": 487266188000.0
+    },
+    {
+      "ts": 433004792212656,
+      "psi_val": 487272838000.0
+    },
+    {
+      "ts": 433005792642503,
+      "psi_val": 487289974000.0
+    },
+    {
+      "ts": 433006793877579,
+      "psi_val": 487296450000.0
+    },
+    {
+      "ts": 433007789084118,
+      "psi_val": 487342208000.0
+    },
+    {
+      "ts": 433008797894810,
+      "psi_val": 487364833000.0
+    },
+    {
+      "ts": 433009792832041,
+      "psi_val": 487398008000.0
+    },
+    {
+      "ts": 433010790536118,
+      "psi_val": 487431960000.0
+    },
+    {
+      "ts": 433011790700734,
+      "psi_val": 487446390000.0
+    },
+    {
+      "ts": 433012790028964,
+      "psi_val": 487472754000.0
+    },
+    {
+      "ts": 433013790623734,
+      "psi_val": 487527730000.0
+    },
+    {
+      "ts": 433014790206195,
+      "psi_val": 487531414000.0
+    },
+    {
+      "ts": 433015790520042,
+      "psi_val": 487551185000.0
+    },
+    {
+      "ts": 433016791056426,
+      "psi_val": 487560456000.0
+    },
+    {
+      "ts": 433017789359119,
+      "psi_val": 487560988000.0
+    },
+    {
+      "ts": 433018791739811,
+      "psi_val": 487562581000.0
+    },
+    {
+      "ts": 433019792529580,
+      "psi_val": 487563122000.0
+    },
+    {
+      "ts": 433020794181888,
+      "psi_val": 487564492000.0
+    },
+    {
+      "ts": 433021789479196,
+      "psi_val": 487575134000.0
+    },
+    {
+      "ts": 433022796335196,
+      "psi_val": 487575398000.0
+    },
+    {
+      "ts": 433023791275734,
+      "psi_val": 487587049000.0
+    },
+    {
+      "ts": 433024791106581,
+      "psi_val": 487589042000.0
+    }
+  ],
+  "query4_lmk_kill": [
+    {
+      "ts": 432927729514806,
+      "name": "Lmkq;"
+    },
+    {
+      "ts": 432927873828652,
+      "name": "Lmkm;"
+    },
+    {
+      "ts": 432927922674498,
+      "name": "Lmk0;"
+    },
+    {
+      "ts": 432927972706806,
+      "name": "Lmkf;"
+    },
+    {
+      "ts": 432928205422806,
+      "name": "Lmkj;"
+    },
+    {
+      "ts": 432929849591421,
+      "name": "Lmkb;"
+    },
+    {
+      "ts": 432929933342498,
+      "name": "Lmkp;"
+    },
+    {
+      "ts": 432932159065037,
+      "name": "kill"
+    },
+    {
+      "ts": 432932161153037,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432942911394268,
+      "name": "kill"
+    },
+    {
+      "ts": 432942912618191,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432944229536653,
+      "name": "Lmkk;"
+    },
+    {
+      "ts": 432953362460961,
+      "name": "kill"
+    },
+    {
+      "ts": 432953365582269,
+      "name": "kill"
+    },
+    {
+      "ts": 432953365598884,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432953368647730,
+      "name": "kill"
+    },
+    {
+      "ts": 432953444529884,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432953452692653,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432956641525961,
+      "name": "kill"
+    },
+    {
+      "ts": 432956643967192,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432956694988038,
+      "name": "monitor contention with owner ActivityManager:killHandler (1674) waiters=0 blocking from com.android.internal.os.LooperStats$Entry com.android.internal.os.LooperStats.findEntry(android.os.Message, boolean)(LooperStats.java:250)"
+    },
+    {
+      "ts": 432956695156346,
+      "name": "monitor contention with owner ActivityManager:killHandler (1674) waiters=1 blocking from com.android.internal.os.LooperStats$Entry com.android.internal.os.LooperStats.findEntry(android.os.Message, boolean)(LooperStats.java:250)"
+    },
+    {
+      "ts": 432956695528115,
+      "name": "monitor contention with owner ActivityManager:killHandler (1674) waiters=2 blocking from com.android.internal.os.LooperStats$Entry com.android.internal.os.LooperStats.findEntry(android.os.Message, boolean)(LooperStats.java:250)"
+    },
+    {
+      "ts": 432958347097038,
+      "name": "kill"
+    },
+    {
+      "ts": 432958349265038,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432958395176961,
+      "name": "monitor contention with owner ActivityManager:killHandler (1674) waiters=0 blocking from com.android.internal.os.LooperStats$Entry com.android.internal.os.LooperStats.findEntry(android.os.Message, boolean)(LooperStats.java:250)"
+    },
+    {
+      "ts": 432973794267731,
+      "name": "Lmki;"
+    },
+    {
+      "ts": 432973913009039,
+      "name": "kill"
+    },
+    {
+      "ts": 432973919199193,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432974088224731,
+      "name": "kill"
+    },
+    {
+      "ts": 432974088731808,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432980951348424,
+      "name": "kill"
+    },
+    {
+      "ts": 432980956727732,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432987076910809,
+      "name": "Lmkr;"
+    },
+    {
+      "ts": 433001944284425,
+      "name": "Lmk;"
+    },
+    {
+      "ts": 433009354285964,
+      "name": "monitor contention with owner PermissionService (1718) at void com.android.server.am.ActivityManagerService.killUidForPermissionChange(int, int, java.lang.String)(ActivityManagerService.java:8991) waiters=0 blocking from void com.android.server.am.BroadcastQueueImpl.handleProcessFreezableChanged(com.android.server.am.ProcessRecord)(BroadcastQueueImpl.java:2097)"
+    },
+    {
+      "ts": 433012199706811,
+      "name": "kill"
+    },
+    {
+      "ts": 433012205755503,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 433013027706580,
+      "name": "kill"
+    },
+    {
+      "ts": 433013029401272,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 433013566880965,
+      "name": "kill"
+    },
+    {
+      "ts": 433013568477272,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 433013609729272,
+      "name": "kill"
+    },
+    {
+      "ts": 433013772465657,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 433016586603119,
+      "name": "kill"
+    },
+    {
+      "ts": 433016596613042,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 433021063313273,
+      "name": "kill"
+    },
+    {
+      "ts": 433021066194811,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 433021942000734,
+      "name": "monitor contention with owner PermissionService (1718) at void com.android.server.am.ActivityManagerService.killUidForPermissionChange(int, int, java.lang.String)(ActivityManagerService.java:8991) waiters=0 blocking from void com.android.server.am.BroadcastQueueImpl.handleProcessFreezableChanged(com.android.server.am.ProcessRecord)(BroadcastQueueImpl.java:2097)"
+    }
+  ],
+  "query5_mem_available_glob": [
+    {
+      "ts": 433003835686887,
+      "available_mb": 4690.29296875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433004792212656,
+      "available_mb": 4496.375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433005792642503,
+      "available_mb": 4680.9296875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433006793877579,
+      "available_mb": 4654.57421875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433007789084118,
+      "available_mb": 4658.78125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433008797894810,
+      "available_mb": 4565.5859375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433009792832041,
+      "available_mb": 4504.35546875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433010790536118,
+      "available_mb": 4566.31640625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433011790700734,
+      "available_mb": 4484.6171875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433012790028964,
+      "available_mb": 4382.83203125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433013790623734,
+      "available_mb": 4576.73046875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433014790206195,
+      "available_mb": 4526.84375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433015790520042,
+      "available_mb": 4485.734375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433016791056426,
+      "available_mb": 4567.83984375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433017789359119,
+      "available_mb": 4507.25,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433018791739811,
+      "available_mb": 4735.140625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433019792529580,
+      "available_mb": 4645.734375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433020794181888,
+      "available_mb": 4646.76953125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433021789479196,
+      "available_mb": 4665.625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433022796335196,
+      "available_mb": 4662.7734375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433023791275734,
+      "available_mb": 4625.4296875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 433024791106581,
+      "available_mb": 4750.9453125,
+      "counter_name": "MemAvailable"
+    }
+  ],
+  "query6_gallery_rss": []
+}

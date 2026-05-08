@@ -1,0 +1,3065 @@
+{
+  "query1_launch": [
+    {
+      "ts": 432736139370871,
+      "duration_ms": 55.543385,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 432737048921871,
+      "duration_ms": 719.670846,
+      "name": "launching: com.instagram.android"
+    },
+    {
+      "ts": 432785063597874,
+      "duration_ms": 303.489846,
+      "name": "launching: com.instagram.android"
+    },
+    {
+      "ts": 432792397151797,
+      "duration_ms": 290.685231,
+      "name": "launching: com.instagram.android"
+    },
+    {
+      "ts": 432800752871490,
+      "duration_ms": 59.279308,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 432802627769952,
+      "duration_ms": 384.744923,
+      "name": "launching: com.instagram.android"
+    },
+    {
+      "ts": 432808934940952,
+      "duration_ms": 42.977539,
+      "name": "launching: com.nothing.launcher"
+    },
+    {
+      "ts": 432810525031799,
+      "duration_ms": 127.186769,
+      "name": "launching: com.android.traceur"
+    }
+  ],
+  "query2_mem_available": [],
+  "query3_psi_mem_some": [
+    {
+      "ts": 432736844561256,
+      "psi_val": 485914150000.0
+    },
+    {
+      "ts": 432737780848025,
+      "psi_val": 485915483000.0
+    },
+    {
+      "ts": 432738780267717,
+      "psi_val": 485917607000.0
+    },
+    {
+      "ts": 432739780493564,
+      "psi_val": 485925901000.0
+    },
+    {
+      "ts": 432740780488333,
+      "psi_val": 485940799000.0
+    },
+    {
+      "ts": 432741781040025,
+      "psi_val": 485950281000.0
+    },
+    {
+      "ts": 432742785269333,
+      "psi_val": 485963214000.0
+    },
+    {
+      "ts": 432743780400410,
+      "psi_val": 485986076000.0
+    },
+    {
+      "ts": 432744780470564,
+      "psi_val": 485988895000.0
+    },
+    {
+      "ts": 432745780391102,
+      "psi_val": 485989099000.0
+    },
+    {
+      "ts": 432746780733872,
+      "psi_val": 485989099000.0
+    },
+    {
+      "ts": 432747780920718,
+      "psi_val": 485989143000.0
+    },
+    {
+      "ts": 432748781033564,
+      "psi_val": 486000305000.0
+    },
+    {
+      "ts": 432749780902180,
+      "psi_val": 486000724000.0
+    },
+    {
+      "ts": 432750780976333,
+      "psi_val": 486001478000.0
+    },
+    {
+      "ts": 432751780989257,
+      "psi_val": 486001505000.0
+    },
+    {
+      "ts": 432752780796103,
+      "psi_val": 486001891000.0
+    },
+    {
+      "ts": 432753780857564,
+      "psi_val": 486002811000.0
+    },
+    {
+      "ts": 432754780989026,
+      "psi_val": 486002974000.0
+    },
+    {
+      "ts": 432755780354257,
+      "psi_val": 486003113000.0
+    },
+    {
+      "ts": 432756780322180,
+      "psi_val": 486003113000.0
+    },
+    {
+      "ts": 432757780730257,
+      "psi_val": 486003121000.0
+    },
+    {
+      "ts": 432758780696642,
+      "psi_val": 486003128000.0
+    },
+    {
+      "ts": 432759780910180,
+      "psi_val": 486003579000.0
+    },
+    {
+      "ts": 432760781092026,
+      "psi_val": 486009136000.0
+    },
+    {
+      "ts": 432761780918257,
+      "psi_val": 486010142000.0
+    },
+    {
+      "ts": 432762781087180,
+      "psi_val": 486010142000.0
+    },
+    {
+      "ts": 432763816028719,
+      "psi_val": 486010376000.0
+    },
+    {
+      "ts": 432764780822796,
+      "psi_val": 486010954000.0
+    },
+    {
+      "ts": 432765780576719,
+      "psi_val": 486026734000.0
+    },
+    {
+      "ts": 432766780356719,
+      "psi_val": 486035176000.0
+    },
+    {
+      "ts": 432767781156719,
+      "psi_val": 486036879000.0
+    },
+    {
+      "ts": 432768780723181,
+      "psi_val": 486036972000.0
+    },
+    {
+      "ts": 432769780381873,
+      "psi_val": 486036972000.0
+    },
+    {
+      "ts": 432770780444412,
+      "psi_val": 486037713000.0
+    },
+    {
+      "ts": 432771780277873,
+      "psi_val": 486037713000.0
+    },
+    {
+      "ts": 432772780864027,
+      "psi_val": 486039330000.0
+    },
+    {
+      "ts": 432773780507719,
+      "psi_val": 486040826000.0
+    },
+    {
+      "ts": 432774780287489,
+      "psi_val": 486065421000.0
+    },
+    {
+      "ts": 432775780600720,
+      "psi_val": 486065625000.0
+    },
+    {
+      "ts": 432776780776643,
+      "psi_val": 486068366000.0
+    },
+    {
+      "ts": 432777780937027,
+      "psi_val": 486070204000.0
+    },
+    {
+      "ts": 432778780669027,
+      "psi_val": 486070595000.0
+    },
+    {
+      "ts": 432779780354181,
+      "psi_val": 486070599000.0
+    },
+    {
+      "ts": 432780780275181,
+      "psi_val": 486072459000.0
+    },
+    {
+      "ts": 432781780307181,
+      "psi_val": 486072466000.0
+    },
+    {
+      "ts": 432782780942182,
+      "psi_val": 486072466000.0
+    },
+    {
+      "ts": 432783780671720,
+      "psi_val": 486074396000.0
+    },
+    {
+      "ts": 432784781153643,
+      "psi_val": 486075837000.0
+    },
+    {
+      "ts": 432785781097028,
+      "psi_val": 486079713000.0
+    },
+    {
+      "ts": 432786780525566,
+      "psi_val": 486131735000.0
+    },
+    {
+      "ts": 432787780655797,
+      "psi_val": 486132831000.0
+    },
+    {
+      "ts": 432788780905951,
+      "psi_val": 486133212000.0
+    },
+    {
+      "ts": 432789781045028,
+      "psi_val": 486133434000.0
+    },
+    {
+      "ts": 432790780722490,
+      "psi_val": 486134388000.0
+    },
+    {
+      "ts": 432791780508644,
+      "psi_val": 486135822000.0
+    },
+    {
+      "ts": 432792781033567,
+      "psi_val": 486138737000.0
+    },
+    {
+      "ts": 432793780240721,
+      "psi_val": 486245131000.0
+    },
+    {
+      "ts": 432794780349028,
+      "psi_val": 486265776000.0
+    },
+    {
+      "ts": 432795780561875,
+      "psi_val": 486265943000.0
+    },
+    {
+      "ts": 432796780197336,
+      "psi_val": 486266582000.0
+    },
+    {
+      "ts": 432797781877644,
+      "psi_val": 486273133000.0
+    },
+    {
+      "ts": 432798780383798,
+      "psi_val": 486273195000.0
+    },
+    {
+      "ts": 432799780257567,
+      "psi_val": 486274319000.0
+    },
+    {
+      "ts": 432800780507490,
+      "psi_val": 486276591000.0
+    },
+    {
+      "ts": 432801780278798,
+      "psi_val": 486514774000.0
+    },
+    {
+      "ts": 432802780826875,
+      "psi_val": 486695524000.0
+    },
+    {
+      "ts": 432803780448721,
+      "psi_val": 486782982000.0
+    },
+    {
+      "ts": 432804781250798,
+      "psi_val": 486785168000.0
+    },
+    {
+      "ts": 432805780315414,
+      "psi_val": 486785254000.0
+    },
+    {
+      "ts": 432806780741029,
+      "psi_val": 486785458000.0
+    },
+    {
+      "ts": 432807781596414,
+      "psi_val": 486786980000.0
+    },
+    {
+      "ts": 432808780898798,
+      "psi_val": 486787254000.0
+    },
+    {
+      "ts": 432809780332645,
+      "psi_val": 486792307000.0
+    },
+    {
+      "ts": 432810781080722,
+      "psi_val": 486793785000.0
+    },
+    {
+      "ts": 432811780308106,
+      "psi_val": 486794136000.0
+    }
+  ],
+  "query4_lmk_kill": [
+    {
+      "ts": 432743152378487,
+      "name": "Lorg/chromium/content/app/KillChildUncaughtExceptionHandler;"
+    },
+    {
+      "ts": 432743153623102,
+      "name": "VerifyClass org.chromium.content.app.KillChildUncaughtExceptionHandler"
+    },
+    {
+      "ts": 432743238034487,
+      "name": "Lmk;"
+    },
+    {
+      "ts": 432743511388102,
+      "name": "Lmk0;"
+    },
+    {
+      "ts": 432743511472410,
+      "name": "Lmk1;"
+    },
+    {
+      "ts": 432743551414564,
+      "name": "VerifyClass org.chromium.content.app.KillChildUncaughtExceptionHandler"
+    },
+    {
+      "ts": 432783635543797,
+      "name": "kill"
+    },
+    {
+      "ts": 432783639624412,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432786420205259,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 432793572117567,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 432794656269875,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 432801264165567,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 432802356188106,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 432803444101337,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 432808701252414,
+      "name": "kill"
+    },
+    {
+      "ts": 432808703792952,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432808960277337,
+      "name": "kill"
+    },
+    {
+      "ts": 432808962370875,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432809285493568,
+      "name": "kill"
+    },
+    {
+      "ts": 432809294418183,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432809606145952,
+      "name": "kill"
+    },
+    {
+      "ts": 432809634406260,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432809901012414,
+      "name": "kill"
+    },
+    {
+      "ts": 432809907853645,
+      "name": "kill"
+    },
+    {
+      "ts": 432809909966799,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432810012530260,
+      "name": "kill"
+    },
+    {
+      "ts": 432810047983414,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432810076618799,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 432810428948106,
+      "name": "kill"
+    },
+    {
+      "ts": 432810430265260,
+      "name": "killProcessGroup"
+    }
+  ],
+  "query5_mem_available_glob": [
+    {
+      "ts": 432736844561256,
+      "available_mb": 5033.70703125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432737780848025,
+      "available_mb": 5028.93359375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432738780267717,
+      "available_mb": 5023.44140625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432739780493564,
+      "available_mb": 5015.91015625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432740780488333,
+      "available_mb": 4941.1484375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432741781040025,
+      "available_mb": 4894.06640625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432742785269333,
+      "available_mb": 4944.86328125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432743780400410,
+      "available_mb": 4907.078125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432744780470564,
+      "available_mb": 4878.578125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432745780391102,
+      "available_mb": 4868.81640625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432746780733872,
+      "available_mb": 4863.52734375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432747780920718,
+      "available_mb": 4855.703125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432748781033564,
+      "available_mb": 4855.80859375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432749780902180,
+      "available_mb": 4841.16015625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432750780976333,
+      "available_mb": 4819.9140625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432751780989257,
+      "available_mb": 4808.24609375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432752780796103,
+      "available_mb": 4803.7734375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432753780857564,
+      "available_mb": 4787.9453125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432754780989026,
+      "available_mb": 4775.33203125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432755780354257,
+      "available_mb": 4764.2578125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432756780322180,
+      "available_mb": 4761.8671875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432757780730257,
+      "available_mb": 4752.9609375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432758780696642,
+      "available_mb": 4749.47265625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432759780910180,
+      "available_mb": 4757.3203125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432760781092026,
+      "available_mb": 4747.328125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432761780918257,
+      "available_mb": 4804.06640625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432762781087180,
+      "available_mb": 4799.46875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432763816028719,
+      "available_mb": 4795.58203125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432764780822796,
+      "available_mb": 4748.76171875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432765780576719,
+      "available_mb": 4666.4921875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432766780356719,
+      "available_mb": 4625.14453125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432767781156719,
+      "available_mb": 4615.2109375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432768780723181,
+      "available_mb": 4604.9375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432769780381873,
+      "available_mb": 4587.03125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432770780444412,
+      "available_mb": 4581.7265625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432771780277873,
+      "available_mb": 4576.06640625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432772780864027,
+      "available_mb": 4569.828125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432773780507719,
+      "available_mb": 4556.1015625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432774780287489,
+      "available_mb": 4575.9609375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432775780600720,
+      "available_mb": 4563.6875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432776780776643,
+      "available_mb": 4555.7421875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432777780937027,
+      "available_mb": 4555.0234375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432778780669027,
+      "available_mb": 4596.57421875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432779780354181,
+      "available_mb": 4574.484375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432780780275181,
+      "available_mb": 4568.8671875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432781780307181,
+      "available_mb": 4558.6796875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432782780942182,
+      "available_mb": 4576.1171875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432783780671720,
+      "available_mb": 4577.92578125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432784781153643,
+      "available_mb": 4608.390625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432785781097028,
+      "available_mb": 4520.56640625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432786780525566,
+      "available_mb": 4536.27734375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432787780655797,
+      "available_mb": 4543.8359375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432788780905951,
+      "available_mb": 4526.10546875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432789781045028,
+      "available_mb": 4521.7734375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432790780722490,
+      "available_mb": 4515.09765625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432791780508644,
+      "available_mb": 4485.41015625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432792781033567,
+      "available_mb": 4451.98046875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432793780240721,
+      "available_mb": 4549.55859375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432794780349028,
+      "available_mb": 4551.55078125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432795780561875,
+      "available_mb": 4537.734375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432796780197336,
+      "available_mb": 4539.81640625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432797781877644,
+      "available_mb": 4524.44921875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432798780383798,
+      "available_mb": 4520.37109375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432799780257567,
+      "available_mb": 4496.45703125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432800780507490,
+      "available_mb": 4523.65625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432801780278798,
+      "available_mb": 4407.7109375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432802780826875,
+      "available_mb": 4702.65625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432803780448721,
+      "available_mb": 4719.80078125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432804781250798,
+      "available_mb": 4634.7109375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432805780315414,
+      "available_mb": 4619.8671875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432806780741029,
+      "available_mb": 4684.3828125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432807781596414,
+      "available_mb": 4651.4140625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432808780898798,
+      "available_mb": 4611.28125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432809780332645,
+      "available_mb": 4434.28515625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432810781080722,
+      "available_mb": 4590.33984375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 432811780308106,
+      "available_mb": 4847.83203125,
+      "counter_name": "MemAvailable"
+    }
+  ],
+  "query6_gallery_rss": [
+    {
+      "ts": 432736804485563,
+      "value_kb": 5752.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/init"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3816.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/init"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3972.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/ueventd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4040.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/prng_seeder"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 8064.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/logd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4860.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/lmkd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4660.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/servicemanager"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4060.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/system_ext/bin/hwservicemanager"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 2672.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/vndservicemanager"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5316.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/vold"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3076.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.boot@1.2-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5208.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/aee_aed64_v2"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 2908.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/aee_aedv64_v2"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4132.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.nfc-service-st"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3692.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/nt_key_monitor"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4928.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/hw/android.system.suspend-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 12468.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/keystore2"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4820.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.security.keymint@2.0-service.trustonic"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 2772.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/tombstoned"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 6608.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/netd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 20728.0,
+      "counter_name": "mem.rss",
+      "process_name": "/apex/com.android.os.statsd/bin/statsd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 129012.0,
+      "counter_name": "mem.rss",
+      "process_name": "zygote64"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 40224.0,
+      "counter_name": "mem.rss",
+      "process_name": "zygote"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3092.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/iptables-restore"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3068.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/ip6tables-restore"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3692.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/system_ext/bin/hw/android.hidl.allocator@1.0-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 10516.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.audio.service.mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 23572.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.biometrics.face-service.noth"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3756.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4468.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.drm-service.clearkey"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 9164.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.drm-service.widevine"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3712.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4712.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.gnss-service.mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 6300.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 11544.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.graphics.composer@3.1-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5212.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.health-service.example"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 15224.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4652.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5444.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.sensors-service.multihal"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4124.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4488.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3644.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.usb.gadget-service.mediatekv1.1"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3400.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vtservice_hidl"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3576.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/lbs_hidl_service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4684.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.lights-service.mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4800.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.memtrack-service.mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 6936.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.mtkpower_applist-service.mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 8032.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3568.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 11432.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.noth.hardware.camera-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4708.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.noth.hardware.charge-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4412.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.noth.hardware.sensor.sensor_extension-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 2736.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.trustonic.tee@1.1-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5336.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.vibrator-service.mediatek"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 20616.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/audioserver"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4396.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/credstore"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5120.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/gpuservice"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 64432.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/surfaceflinger"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4240.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/hw/android.hardware.audio.parameter_parser.service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3128.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/fuelgauged"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4976.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/ccci_mdinit"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4520.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/ccci_rpcd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 2444.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/mcDriverDaemon"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4968.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/fpsgo"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5024.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/gbe"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4588.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/touch_boost"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 448.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/drmserver32"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 11372.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/traced_probes"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 22508.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/traced"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 2088.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/connsyslogger"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 14996.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/vtservice"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5856.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4024.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/thermal_core"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 2604.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/wlan_assistant"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4680.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/mtkfusionrild"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 6588.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/mnld"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 14444.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/cameraserver"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3840.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/incidentd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 6380.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/installd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 12412.0,
+      "counter_name": "mem.rss",
+      "process_name": "media.extractor"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 14520.0,
+      "counter_name": "mem.rss",
+      "process_name": "media.metrics"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 7916.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/storaged"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5232.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/wificond"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3048.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/system_ext/bin/emdlogger"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4320.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/lbs_dbg_ext"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3340.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/thermald"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 21376.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/mediaserver"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3136.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/mobile_log_d"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3488.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/netdiag"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 424.0,
+      "counter_name": "mem.rss",
+      "process_name": "media.codec"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 80160.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/camerahalserver"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4044.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/eara_io_service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3156.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/ipsec_mon"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4804.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/mtk_agpsd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 6076.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 6200.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 15972.0,
+      "counter_name": "mem.rss",
+      "process_name": "media.swcodec"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4836.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/gatekeeperd"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4796.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/update_engine"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3620.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/netdagent"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4656.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.nothing.hardware.biometrics.fingerprint-service"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3020.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/bip_ap"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 830892.0,
+      "counter_name": "mem.rss",
+      "process_name": "system_server"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4908.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 116308.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.proxy"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 418436.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.systemui"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 116032.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.networkstack.process"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 107392.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.mediatek.ims"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 100980.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.nfc"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 89652.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.se"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 99036.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.thirdparty"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 95332.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.audioeffect"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 138808.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.phone"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 405184.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.launcher"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 1940.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/nt_bpf"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 116068.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.bluetooth"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 171596.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.ext.services"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3840.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/system_ext/bin/batterywarning"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5116.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/sltntc"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 3868.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/frs"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 5288.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/nt_logkit"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 153536.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.providers.media.module"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 146816.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.as"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 103064.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.experience"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 197976.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.hearthstone"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 106996.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.glyphnotification"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 141064.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.ntgamedashboard"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 107744.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.companiondevicemanager"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 113684.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.cardservice"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 298976.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.inputmethod.latin"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 307112.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.gms.persistent"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 159536.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.wellbeing"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 190684.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.googlequicksearchbox:search"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 147552.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.universal.search"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 304240.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.gms"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 121564.0,
+      "counter_name": "mem.rss",
+      "process_name": "android.process.acore"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 178308.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.googlequicksearchbox:interactor"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 119364.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.googlequicksearchbox:trusted_disable_art_image_:com.google.android.apps.gsa.hot"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 111272.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.messaging:rcs"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 4892.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/wpa_supplicant"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 166900.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.messaging"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 227024.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.gms.ui"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 72316.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.instagram.android_zygote"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 2164.0,
+      "counter_name": "mem.rss",
+      "process_name": "clatd-ccmni2"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 168900.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.permissioncontroller"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 325456.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.settings"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 259060.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.smartcenter"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 186228.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.traceur"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 100628.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.providers.calendar"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 320836.0,
+      "counter_name": "mem.rss",
+      "process_name": "ogle.android.gm"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 77760.0,
+      "counter_name": "mem.rss",
+      "process_name": "webview_zygote"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 173900.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.settings.intelligence"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 430784.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.whatsapp"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 220984.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.tachyon"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 233132.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.instagram.android:fbns"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 139608.0,
+      "counter_name": "mem.rss",
+      "process_name": "le.android.keep"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 148372.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.projection.gearhead:car"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 129856.0,
+      "counter_name": "mem.rss",
+      "process_name": ".apps.nbu.files"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 183436.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.photos"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 124568.0,
+      "counter_name": "mem.rss",
+      "process_name": "id.apps.restore"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 193000.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.youtube.music"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 155612.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.calendar"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 244468.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.googlequicksearchbox:googleapp"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 152164.0,
+      "counter_name": "mem.rss",
+      "process_name": "ndroid.contacts"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 194924.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.gms.unstable"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 162384.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.videos"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 286072.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.youtube"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 126364.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.duokan.phone.remotecontroller"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 148260.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.adm"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 236804.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.chromecast.app"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 98836.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.rkpdapp"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 130728.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.classroom"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 251284.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.docs.editors.docs"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 229316.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.docs.editors.sheets"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 154480.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.labs.language.tailwind"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 271584.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.nbu.paisa.user"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 134400.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.subscriptions.red"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 199012.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.play.games"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 335900.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.twitter.android"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 415836.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.instagram.android"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 151872.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.camera"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 120616.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.tts"
+    },
+    {
+      "ts": 432736804485563,
+      "value_kb": 184240.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.vending"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5752.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/init"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3816.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/init"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3972.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/ueventd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4040.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/prng_seeder"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 8120.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/logd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4860.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/lmkd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4660.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/servicemanager"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4060.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/system_ext/bin/hwservicemanager"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 2672.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/vndservicemanager"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5316.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/vold"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3076.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.boot@1.2-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5208.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/aee_aed64_v2"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 2908.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/aee_aedv64_v2"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4132.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.nfc-service-st"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3692.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/nt_key_monitor"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4928.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/hw/android.system.suspend-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 12512.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/keystore2"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4820.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.security.keymint@2.0-service.trustonic"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 2772.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/tombstoned"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 6560.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/netd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 20728.0,
+      "counter_name": "mem.rss",
+      "process_name": "/apex/com.android.os.statsd/bin/statsd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 129012.0,
+      "counter_name": "mem.rss",
+      "process_name": "zygote64"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 40224.0,
+      "counter_name": "mem.rss",
+      "process_name": "zygote"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3092.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/iptables-restore"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3068.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/ip6tables-restore"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3692.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/system_ext/bin/hw/android.hidl.allocator@1.0-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 10572.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.audio.service.mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 23572.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.biometrics.face-service.noth"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3756.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4468.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.drm-service.clearkey"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 9164.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.drm-service.widevine"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3712.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.gatekeeper@1.0-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4712.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.gnss-service.mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 6300.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 11544.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.graphics.composer@3.1-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5212.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.health-service.example"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 15224.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4652.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5444.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.sensors-service.multihal"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4124.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4488.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.usb-aidl-service.mediatekv1.0"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3644.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.usb.gadget-service.mediatekv1.1"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3400.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vtservice_hidl"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3576.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/lbs_hidl_service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4684.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.lights-service.mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4800.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.memtrack-service.mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 6936.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.mtkpower_applist-service.mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 8032.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3568.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 11432.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.noth.hardware.camera-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4708.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.noth.hardware.charge-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4412.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.noth.hardware.sensor.sensor_extension-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 2736.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.trustonic.tee@1.1-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5360.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.vibrator-service.mediatek"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 21340.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/audioserver"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4396.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/credstore"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5120.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/gpuservice"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 64584.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/surfaceflinger"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4240.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/hw/android.hardware.audio.parameter_parser.service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3128.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/fuelgauged"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4976.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/ccci_mdinit"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4520.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/ccci_rpcd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 2444.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/mcDriverDaemon"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4968.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/fpsgo"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5024.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/gbe"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4588.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/touch_boost"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 448.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/drmserver32"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 11372.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/traced_probes"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 141364.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/traced"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 2088.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/connsyslogger"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 14996.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/vtservice"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5856.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4024.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/thermal_core"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 2604.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/wlan_assistant"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4680.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/mtkfusionrild"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 6588.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/mnld"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 14444.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/cameraserver"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3840.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/incidentd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 6380.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/installd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 12412.0,
+      "counter_name": "mem.rss",
+      "process_name": "media.extractor"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 15200.0,
+      "counter_name": "mem.rss",
+      "process_name": "media.metrics"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 7916.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/storaged"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5232.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/wificond"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3048.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/system_ext/bin/emdlogger"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4320.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/lbs_dbg_ext"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3340.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/thermald"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 21376.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/mediaserver"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3136.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/mobile_log_d"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3488.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/netdiag"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 424.0,
+      "counter_name": "mem.rss",
+      "process_name": "media.codec"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 80160.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/camerahalserver"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4044.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/eara_io_service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3156.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/ipsec_mon"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4804.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/mtk_agpsd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 6076.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.mmlpq@V1-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 6200.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 18460.0,
+      "counter_name": "mem.rss",
+      "process_name": "media.swcodec"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4836.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/gatekeeperd"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4796.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/bin/update_engine"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3620.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/netdagent"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4656.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/vendor.nothing.hardware.biometrics.fingerprint-service"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3020.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/bip_ap"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 723636.0,
+      "counter_name": "mem.rss",
+      "process_name": "system_server"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4908.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 112448.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.proxy"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 399696.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.systemui"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 116260.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.networkstack.process"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 107392.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.mediatek.ims"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 100980.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.nfc"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 89652.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.se"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 99160.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.thirdparty"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 95332.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.audioeffect"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 139168.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.phone"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 399740.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.launcher"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 1940.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/nt_bpf"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 116068.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.bluetooth"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 171596.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.ext.services"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3840.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system/system_ext/bin/batterywarning"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5116.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/sltntc"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 3868.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/frs"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 5288.0,
+      "counter_name": "mem.rss",
+      "process_name": "/system_ext/bin/nt_logkit"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 150600.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.providers.media.module"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 148388.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.as"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 103064.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.experience"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 198216.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.hearthstone"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 106996.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.glyphnotification"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 141064.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.ntgamedashboard"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 107744.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.companiondevicemanager"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 113684.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.cardservice"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 299232.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.inputmethod.latin"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 303500.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.gms.persistent"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 159536.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.wellbeing"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 190684.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.googlequicksearchbox:search"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 147864.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.universal.search"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 299496.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.gms"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 119700.0,
+      "counter_name": "mem.rss",
+      "process_name": "android.process.acore"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 178308.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.googlequicksearchbox:interactor"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 119364.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.googlequicksearchbox:trusted_disable_art_image_:com.google.android.apps.gsa.hot"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 112048.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.messaging:rcs"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 4892.0,
+      "counter_name": "mem.rss",
+      "process_name": "/vendor/bin/hw/wpa_supplicant"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 167204.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.messaging"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 227024.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.gms.ui"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 72316.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.instagram.android_zygote"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 2164.0,
+      "counter_name": "mem.rss",
+      "process_name": "clatd-ccmni2"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 168900.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.permissioncontroller"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 325456.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.settings"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 268804.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.smartcenter"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 185508.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.traceur"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 100628.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.providers.calendar"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 320836.0,
+      "counter_name": "mem.rss",
+      "process_name": "ogle.android.gm"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 77760.0,
+      "counter_name": "mem.rss",
+      "process_name": "webview_zygote"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 173900.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.settings.intelligence"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 412508.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.whatsapp"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 220984.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.tachyon"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 230052.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.instagram.android:fbns"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 139608.0,
+      "counter_name": "mem.rss",
+      "process_name": "le.android.keep"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 148364.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.projection.gearhead:car"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 129856.0,
+      "counter_name": "mem.rss",
+      "process_name": ".apps.nbu.files"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 196756.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.photos"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 124568.0,
+      "counter_name": "mem.rss",
+      "process_name": "id.apps.restore"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 193000.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.youtube.music"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 155604.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.calendar"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 246188.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.googlequicksearchbox:googleapp"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 152164.0,
+      "counter_name": "mem.rss",
+      "process_name": "ndroid.contacts"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 194900.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.gms.unstable"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 162300.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.videos"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 286072.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.youtube"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 126364.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.duokan.phone.remotecontroller"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 148216.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.adm"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 236660.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.chromecast.app"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 98836.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.rkpdapp"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 130676.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.classroom"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 250952.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.docs.editors.docs"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 228936.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.docs.editors.sheets"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 154456.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.labs.language.tailwind"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 271476.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.nbu.paisa.user"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 134320.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.apps.subscriptions.red"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 198916.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.play.games"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 337284.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.twitter.android"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 825028.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.instagram.android"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 154328.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.nothing.camera"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 172080.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.instagram.android:sandboxed_process0:com.facebook.browser.helium.content.SandboxedProcessServi"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 148404.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.instagram.android:zygote_warmer:com.facebook.browser.helium.preload.AppZygoteWarmerService"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 120616.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.google.android.tts"
+    },
+    {
+      "ts": 432763780197027,
+      "value_kb": 189704.0,
+      "counter_name": "mem.rss",
+      "process_name": "com.android.vending"
+    }
+  ]
+}
