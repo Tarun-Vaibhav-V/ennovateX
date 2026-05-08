@@ -1,0 +1,681 @@
+{
+  "query1_launch": [
+    {
+      "ts": 1850067188899056,
+      "duration_ms": 176.246355,
+      "name": "launching: com.sec.android.app.launcher"
+    },
+    {
+      "ts": 1850068760441660,
+      "duration_ms": 83.713073,
+      "name": "launching: com.sec.android.app.launcher"
+    },
+    {
+      "ts": 1850069852554264,
+      "duration_ms": 600.789687,
+      "name": "launching: com.adobe.scan.android"
+    },
+    {
+      "ts": 1850109266868936,
+      "duration_ms": 60.190208,
+      "name": "launching: com.sec.android.app.launcher"
+    },
+    {
+      "ts": 1850111376599040,
+      "duration_ms": 277.97776,
+      "name": "launching: com.sec.android.gallery3d"
+    }
+  ],
+  "query3_psi_mem_some": [
+    {
+      "ts": 1850078665154365,
+      "psi_val": 13359632665000.0
+    },
+    {
+      "ts": 1850079604753791,
+      "psi_val": 13359654825000.0
+    },
+    {
+      "ts": 1850080606667176,
+      "psi_val": 13359660826000.0
+    },
+    {
+      "ts": 1850081602946811,
+      "psi_val": 13359675879000.0
+    },
+    {
+      "ts": 1850082603504207,
+      "psi_val": 13359861106000.0
+    },
+    {
+      "ts": 1850083604553946,
+      "psi_val": 13359898414000.0
+    },
+    {
+      "ts": 1850084613349675,
+      "psi_val": 13359923088000.0
+    },
+    {
+      "ts": 1850085604077487,
+      "psi_val": 13359934362000.0
+    },
+    {
+      "ts": 1850086604152382,
+      "psi_val": 13359943636000.0
+    },
+    {
+      "ts": 1850087607363476,
+      "psi_val": 13359971246000.0
+    },
+    {
+      "ts": 1850088606782173,
+      "psi_val": 13359977417000.0
+    },
+    {
+      "ts": 1850089603667381,
+      "psi_val": 13360057357000.0
+    },
+    {
+      "ts": 1850090607758370,
+      "psi_val": 13360128377000.0
+    },
+    {
+      "ts": 1850091610052797,
+      "psi_val": 13360164829000.0
+    },
+    {
+      "ts": 1850092604189880,
+      "psi_val": 13360184768000.0
+    },
+    {
+      "ts": 1850093603433525,
+      "psi_val": 13360230628000.0
+    },
+    {
+      "ts": 1850094603313004,
+      "psi_val": 13360359894000.0
+    },
+    {
+      "ts": 1850095605381441,
+      "psi_val": 13360365029000.0
+    },
+    {
+      "ts": 1850096604328212,
+      "psi_val": 13360388762000.0
+    },
+    {
+      "ts": 1850097605424149,
+      "psi_val": 13360417865000.0
+    },
+    {
+      "ts": 1850098603425034,
+      "psi_val": 13360437808000.0
+    },
+    {
+      "ts": 1850099606895346,
+      "psi_val": 13360509647000.0
+    },
+    {
+      "ts": 1850100609572794,
+      "psi_val": 13360534763000.0
+    },
+    {
+      "ts": 1850101604262481,
+      "psi_val": 13360580895000.0
+    },
+    {
+      "ts": 1850102603636751,
+      "psi_val": 13360618519000.0
+    },
+    {
+      "ts": 1850103603136022,
+      "psi_val": 13360648081000.0
+    },
+    {
+      "ts": 1850104603910084,
+      "psi_val": 13360679320000.0
+    },
+    {
+      "ts": 1850105605045500,
+      "psi_val": 13360683298000.0
+    },
+    {
+      "ts": 1850106608955864,
+      "psi_val": 13360703302000.0
+    },
+    {
+      "ts": 1850107605278103,
+      "psi_val": 13360710091000.0
+    },
+    {
+      "ts": 1850108608596489,
+      "psi_val": 13360714076000.0
+    },
+    {
+      "ts": 1850109603847999,
+      "psi_val": 13360804810000.0
+    },
+    {
+      "ts": 1850110604721488,
+      "psi_val": 13360982796000.0
+    },
+    {
+      "ts": 1850111604855185,
+      "psi_val": 13361032008000.0
+    },
+    {
+      "ts": 1850112603932164,
+      "psi_val": 13361182929000.0
+    },
+    {
+      "ts": 1850113603370028,
+      "psi_val": 13361295053000.0
+    },
+    {
+      "ts": 1850114603875184,
+      "psi_val": 13361337638000.0
+    },
+    {
+      "ts": 1850115603189455,
+      "psi_val": 13361490706000.0
+    },
+    {
+      "ts": 1850116602981694,
+      "psi_val": 13361778190000.0
+    },
+    {
+      "ts": 1850117605559298,
+      "psi_val": 13361801042000.0
+    }
+  ],
+  "query4_lmk_kill": [
+    {
+      "ts": 1850011743006213,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850011789818213,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850067290419942,
+      "name": "lmk,16442,3,975,201,12"
+    },
+    {
+      "ts": 1850067290419942,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850067349022129,
+      "name": "lmk,12692,100,965,0,0"
+    },
+    {
+      "ts": 1850067349022129,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850067351780827,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850067401651608,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850067424865358,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850067427914890,
+      "name": "lmk,9749,100,990,0,0"
+    },
+    {
+      "ts": 1850067427914890,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850067482657077,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850068441184004,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850070107900670,
+      "name": "lmk,10338,3,985,850,15"
+    },
+    {
+      "ts": 1850070107900670,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850070120518587,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850070195234003,
+      "name": "lmk,14618,100,975,850,0"
+    },
+    {
+      "ts": 1850070195234003,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850070198966972,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850070271947493,
+      "name": "lmk,16702,100,975,850,0"
+    },
+    {
+      "ts": 1850070271947493,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850070303330878,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850070318116399,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850070319987857,
+      "name": "lmk,16680,100,975,850,0"
+    },
+    {
+      "ts": 1850070319987857,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850070356015618,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850070358226191,
+      "name": "lmk,11092,100,965,850,0"
+    },
+    {
+      "ts": 1850070358226191,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850070363579628,
+      "name": "monitor contention with owner ActivityManager:killHandler (3623) waiters=0 blocking from com.android.internal.os.LooperStats$Entry com.android.internal.os.LooperStats.findEntry(android.os.Message, boolean)(LooperStats.java:250)"
+    },
+    {
+      "ts": 1850070364445878,
+      "name": "monitor contention with owner ActivityManager:killHandler (3623) waiters=1 blocking from com.android.internal.os.LooperStats$Entry com.android.internal.os.LooperStats.findEntry(android.os.Message, boolean)(LooperStats.java:250)"
+    },
+    {
+      "ts": 1850070394778118,
+      "name": "lmk,8420,100,965,850,0"
+    },
+    {
+      "ts": 1850070394778118,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850070400316399,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850070434939941,
+      "name": "lmk,17419,100,955,850,0"
+    },
+    {
+      "ts": 1850070434939941,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850070436307805,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850070508766659,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850071161622336,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850072211504263,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850073257286867,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850082013571603,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850083058966550,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850089097366496,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850090137297485,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850093789387015,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850094833303890,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850099217204721,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850101413210658,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850109652831436,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850110689427425,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850111491546331,
+      "name": "lmk,16047,3,965,850,20"
+    },
+    {
+      "ts": 1850111491546331,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850111528459925,
+      "name": "lmk,17453,100,955,850,0"
+    },
+    {
+      "ts": 1850111528459925,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850111536476435,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850111573175237,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850111573505810,
+      "name": "lmk,17858,100,955,850,0"
+    },
+    {
+      "ts": 1850111573505810,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850111611111019,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850111611792477,
+      "name": "lmk,17274,100,955,850,0"
+    },
+    {
+      "ts": 1850111611792477,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850111630066852,
+      "name": "lmk,17857,100,945,850,0"
+    },
+    {
+      "ts": 1850111630066852,
+      "name": "mem.lmk"
+    },
+    {
+      "ts": 1850111655852633,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850111671771800,
+      "name": "killProcessGroup"
+    },
+    {
+      "ts": 1850111733854873,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850112773250602,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850113817266851,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850114861245080,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850115907111642,
+      "name": "criticalLowMemory"
+    },
+    {
+      "ts": 1850116953233100,
+      "name": "criticalLowMemory"
+    }
+  ],
+  "query5_mem_available_glob": [
+    {
+      "ts": 1850078665154365,
+      "available_mb": 1038.6015625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850079604753791,
+      "available_mb": 1055.48046875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850080606667176,
+      "available_mb": 1042.23828125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850081602946811,
+      "available_mb": 1023.3203125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850082603504207,
+      "available_mb": 1034.89453125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850083604553946,
+      "available_mb": 1041.5703125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850084613349675,
+      "available_mb": 1089.2421875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850085604077487,
+      "available_mb": 1073.97265625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850086604152382,
+      "available_mb": 1061.8203125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850087607363476,
+      "available_mb": 1076.55078125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850088606782173,
+      "available_mb": 1066.8671875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850089603667381,
+      "available_mb": 1084.19921875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850090607758370,
+      "available_mb": 1097.65234375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850091610052797,
+      "available_mb": 1090.0546875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850092604189880,
+      "available_mb": 1115.5546875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850093603433525,
+      "available_mb": 1076.25390625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850094603313004,
+      "available_mb": 1104.69140625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850095605381441,
+      "available_mb": 1084.4375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850096604328212,
+      "available_mb": 1064.5078125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850097605424149,
+      "available_mb": 1048.359375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850098603425034,
+      "available_mb": 1034.140625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850099606895346,
+      "available_mb": 1053.421875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850100609572794,
+      "available_mb": 1053.09765625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850101604262481,
+      "available_mb": 1070.3125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850102603636751,
+      "available_mb": 1080.265625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850103603136022,
+      "available_mb": 1079.67578125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850104603910084,
+      "available_mb": 1062.26953125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850105605045500,
+      "available_mb": 1057.3359375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850106608955864,
+      "available_mb": 1050.1171875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850107605278103,
+      "available_mb": 1079.48828125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850108608596489,
+      "available_mb": 1072.87890625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850109603847999,
+      "available_mb": 958.3828125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850110604721488,
+      "available_mb": 1104.46875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850111604855185,
+      "available_mb": 1060.87890625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850112603932164,
+      "available_mb": 1095.73046875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850113603370028,
+      "available_mb": 1140.515625,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850114603875184,
+      "available_mb": 1132.15234375,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850115603189455,
+      "available_mb": 1133.63671875,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850116602981694,
+      "available_mb": 1155.51953125,
+      "counter_name": "MemAvailable"
+    },
+    {
+      "ts": 1850117605559298,
+      "available_mb": 1163.6015625,
+      "counter_name": "MemAvailable"
+    }
+  ],
+  "query2_mem_available": [],
+  "query6_gallery_rss": []
+}
